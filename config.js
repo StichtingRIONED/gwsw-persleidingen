@@ -4,7 +4,7 @@ var respecConfig =
   specStatus: "design",
   //specType: "HR",             // Handreiking
   //format: "markdown",         // Altijd "markdown"     
-  shortName: "gwsw-maatregelen", 	      // Wordt gebruikt in de document URL
+  shortName: "gwsw-persleidingen", 	      // Wordt gebruikt in de document URL
   license: "cc0",
    
   editors: [{
@@ -25,15 +25,15 @@ var respecConfig =
     companyURL: "https://www.marIvon.nl"
   }],
   otherLinks: [{
-    key: "GitHub", href: "https://github.com/stichtingrioned/gwsw-maatregelen/"
+    key: "GitHub", href: "https://github.com/stichtingrioned/gwsw-persleidingen/"
   }],
   //github: "https://github.com/StichtingRIONED/GWSW"
   //-- Repositorynaam/issues op GitHub ------------------------------------------------
   //issueBase: "https://github.com/StichtingRIONED/GWSW/issues/",
 
-  thisVersion: "https://stichtingrioned.github.io/gwsw-maatregelen/",
+  thisVersion: "https://stichtingrioned.github.io/gwsw-persleidingen/",
   latestVersion: "", // gepubliceerde versie
-  edDraftURI: "https://stichtingrioned.github.io/gwsw-maatregelen/", // werkversie
+  edDraftURI: "https://stichtingrioned.github.io/gwsw-persleidingen/", // werkversie
 
   maxTocLevel: 3, // Aantal niveau's ToC, default is 0/geen limiet
   level2: true, // mv: hoofdstuk-nummering alleen voor de subsections (20210212)

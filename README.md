@@ -1,2 +1,2 @@
-# gwsw-maatregelen
-GWSW Maatregelen - Deelmodel en toepassingen
+# gwsw-persleidingen
+GWSW Persleidingen - Deelmodel en toepassingen

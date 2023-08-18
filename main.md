@@ -1,4 +1,4 @@
-# GWSW Maatregelen
+# GWSW Persleidingen
 
 <style>
   .symbolSmall{width:20px;height:20px;margin-right:1em;vertical-align:middle}
