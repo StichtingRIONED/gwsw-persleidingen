@@ -14,15 +14,15 @@ var respecConfig =
     companyURL: "https://www.riool.net"
   }],
   authors: [{
-    name: "Hans van Keeken",
-    url: "mailto:hvk@kragten.nl",
-    company: "Kragten",
-    companyURL: "https://www.kragten.nl/"
+    name: "Johan Post",
+    url: "mailto:johan.post@urbanwater.nl",
+    company: "UrbanWater",
+    companyURL: "https://www.urbanwater.nl/"
   },{
-    name: "Marinus Vonhof",
-    url: "mailto:marinus.vonhof@marIvon.nl",
-    company: "marIvon",
-    companyURL: "https://www.marIvon.nl"
+    name: "Wouter van Riel",
+    url: "mailto:wouter.van.riel@infralytics.org",
+    company: "infralytics",
+    companyURL: "https://www.infralytics.org"
   }],
   otherLinks: [{
     key: "GitHub", href: "https://github.com/stichtingrioned/gwsw-persleidingen/"
