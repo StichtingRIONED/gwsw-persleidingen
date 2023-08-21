@@ -15,20 +15,22 @@ Context, GWSW-project
 
 # Beoogde toepassing
 
-Applicaties (extern en/of op GWSW Server)
+Applicaties (extern en/of op GWSW Server)  
 Gegevensbehoefte
 
 # Inrichting van het deelmodel
 
-Belangrijkste GWSW-aanpassingen
+Belangrijkste GWSW-aanpassingen  
 Modelleerprincipes
 
 # Realisatie
 
-Deelnemers
-Taakverdeling, rol werkgroep, projectleider, RIONED
+Deelnemers  
+Taakverdeling, rol werkgroep, projectleider, RIONED  
 Fasering in de tijd
 
 # Handleiding, toepassen
 
-Help bij opbouw datasets, gebruik apps
+Help bij  
+* opbouw datasets
+* gebruik apps
