@@ -10,3 +10,25 @@ Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Eric Oos
 Vragen over deze website en het GWSW kunt u stellen via gwsw@rioned.org. 
 
 # Inleiding
+
+Context, GWSW-project
+
+# Beoogde toepassing
+
+Applicaties (extern en/of op GWSW Server)
+Gegevensbehoefte
+
+# Inrichting van het deelmodel
+
+Belangrijkste GWSW-aanpassingen
+Modelleerprincipes
+
+# Realisatie
+
+Deelnemers
+Taakverdeling, rol werkgroep, projectleider, RIONED
+Fasering in de tijd
+
+# Handleiding, toepassen
+
+Help bij opbouw datasets, gebruik apps
