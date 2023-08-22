@@ -6,7 +6,7 @@ var respecConfig =
   //format: "markdown",         // Altijd "markdown"     
   shortName: "gwsw-persleidingen", 	      // Wordt gebruikt in de document URL
   license: "cc0",
-   
+
   editors: [{
     name: "Eric Oosterom",
     url: "mailto:eric.oosterom@rioned.org",
@@ -16,9 +16,9 @@ var respecConfig =
   authors: [{
     name: "Johan Post",
     url: "mailto:johan.post@urbanwater.nl",
-    company: "UrbanWater",
+    company: "Partners4UrbanWater",
     companyURL: "https://www.urbanwater.nl/"
-  },{
+  }, {
     name: "Wouter van Riel",
     url: "mailto:wouter.van.riel@infralytics.org",
     company: "infralytics",
