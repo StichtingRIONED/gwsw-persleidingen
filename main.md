@@ -21,6 +21,7 @@ Vanuit Stichting RIONED is Eric Oosterom de verantwoordelijk projectmanager. Vra
 
 
 # Inleiding
+Een groot deel van de persleidingen in Nederland is aangelegd in de jaren 70 en 80 toen RWZI's op grote schaal werden gebouwd. Deze leidingen hebben jaren gefunctioneerd zonder veel problemen, waardoor beheeractiviteiten beperkt waren tot voornamelijk reparaties na een incident. 
 
 Context, GWSW-project
 
