@@ -5,9 +5,20 @@
   .symbol{width:30px;height:30px;margin-right:1em;vertical-align:middle}
 </style>
 
-Stichting RIONED is initiatiefnemer en eigenaar van dit GitHub-project, Eric Oosterom is de verantwoordelijk projectmanager. 
+<a id="werkgroep"></a>
+De module GWSW-Kengetallen is ontwikkeld door Johan Post (Partners4UrbanWater) en Wouter van Riel (Infralytics), in samenwerking met de werkgroep GWSW-Kengetallen, bestaande uit:
+- Frans Hamers, Waterschap Aa en Maas
+- Theo Heimensen, Waterschap Vallei en Veluwe
+- Werner Jousma, Acquaint
+- Roland Markus, Xylem
+- Demas Poldervaart, Gemeente Rotterdam
+- Thomas Staverman, Waternet
+- Michiel Tukker, Deltares
+- Sjaak Verkerk, Antea Group
+- Paul van Wetten, Hoogheemraadschap van Rijnland
 
-Vragen over deze website en het GWSW kunt u stellen via gwsw@rioned.org. 
+Vanuit Stichting RIONED is Eric Oosterom de verantwoordelijk projectmanager. Vragen over de module en de totstandkoming en vaststelling ervan kunt u stellen via gwsw@rioned.org. 
+
 
 # Inleiding
 
