@@ -42,10 +42,11 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 
 <!---Applicaties (extern en/of op GWSW Server) Gegevensbehoefte-->
 
-# Inrichting van het deelmodel
+# Nieuw in GWSW persleidingen
+In dit hoofdstuk zijn de belangrijkste aanpassingen aan het GWSW beschreven, vanuit een beheerdersperspectief. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
 
-Belangrijkste GWSW-aanpassingen  
-Modelleerprincipes
+## Vaste data over persleidingen
+Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
 
 ## Gegevens op verschillende detailniveaus
 Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 1) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 1 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
@@ -57,13 +58,20 @@ Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentnivea
 ## Leiding volgen over de gehele levensduur
 Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te schatten hoe snel degradatieprocessen zoals zetting of aantasting gaan. Deze snelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere metingen van een leidingkenmerk naast elkaar staan, zonder dat de nieuwste meetwaarde de vorige overschrijft. 
 
-| **Diepteligging   (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning** |
-|------------------------------------|-------------------------|-------------------------|
-| 11.73 m NAP                        | Revisie                 | 01-01-1971              |
-| 11.68 m NAP                        | GPS Landmeting          | 12-07-1996              |
-| 11.66 m NAP                        | Inspectie               | 06-08-2022              |
+Een voorbeeld hiervan is opgenomen in Tabel 1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. 
 
-# Realisatie
+*Tabel 1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
+| **Objectnaam** | **Diepteligging (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning ** |
+|----------------|----------------------------------|-------------------------|--------------------------|
+| xx_1           | 11.73 m NAP                      | Revisie                 | 01-01-1971               |
+| xx_1           | 11.68 m NAP                      | GPS Landmeting          | 12-07-1996               |
+| xx_1           | 11.66 m NAP                      | Inspectie               | 06-08-2022               |
+
+## Persleidingincidenten
+De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
+
+# Inhoud module
+
 
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
