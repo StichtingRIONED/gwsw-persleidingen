@@ -57,11 +57,11 @@ Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentnivea
 ## Leiding volgen over de gehele levensduur
 Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te schatten hoe snel degradatieprocessen zoals zetting of aantasting gaan. Deze snelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere metingen van een leidingkenmerk naast elkaar staan, zonder dat de nieuwste meetwaarde de vorige overschrijft. 
 
-| Diepteligging   (z-coördinaat) [m NAP] | Wijze van inwinning | Datum van inwinning |
-|----------------------------------------|---------------------|---------------------|
-| 11.73                                  | Revisie             | 01-01-1971          |
-| 11.68                                  | GPS Landmeting      | 12-07-1996          |
-| 11.66                                  | Inspectie           | 06-08-2022          |
+| **Diepteligging   (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning** |
+|------------------------------------|-------------------------|-------------------------|
+| 11.73 m NAP                        | Revisie                 | 01-01-1971              |
+| 11.68 m NAP                        | GPS Landmeting          | 12-07-1996              |
+| 11.66 m NAP                        | Inspectie               | 06-08-2022              |
 
 # Realisatie
 
