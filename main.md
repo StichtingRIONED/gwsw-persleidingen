@@ -47,6 +47,11 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 Belangrijkste GWSW-aanpassingen  
 Modelleerprincipes
 
+## Gegevens op verschillende niveaus
+
+<img src="media/Buis_SysteemNiveau.png" style="width:100%;height:100%" />
+*Figuur 1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
+
 # Realisatie
 
 Deelnemers  
