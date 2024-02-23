@@ -47,10 +47,21 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 Belangrijkste GWSW-aanpassingen  
 Modelleerprincipes
 
-## Gegevens op verschillende niveaus
+## Gegevens op verschillende detailniveaus
+Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 1) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 1 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
 
-<img src="media/Buis_SysteemNiveau.png" style="width:100%;height:100%" />
+<img src="media/Buis_SysteemNiveau.png" style="width:80%;height:80%" />
+
 *Figuur 1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
+
+## Leiding volgen over de gehele levensduur
+Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te schatten hoe snel degradatieprocessen zoals zetting of aantasting gaan. Deze snelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere metingen van een leidingkenmerk naast elkaar staan, zonder dat de nieuwste meetwaarde de vorige overschrijft. 
+
+| Diepteligging   (z-coördinaat) [m NAP] | Wijze van inwinning | Datum van inwinning |
+|----------------------------------------|---------------------|---------------------|
+| 11.73                                  | Revisie             | 01-01-1971          |
+| 11.68                                  | GPS Landmeting      | 12-07-1996          |
+| 11.66                                  | Inspectie           | 06-08-2022          |
 
 # Realisatie
 
