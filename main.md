@@ -43,7 +43,7 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 <!---Applicaties (extern en/of op GWSW Server) Gegevensbehoefte-->
 
 # Nieuw in GWSW persleidingen
-In dit hoofdstuk zijn de belangrijkste aanpassingen aan het GWSW beschreven, vanuit een beheerdersperspectief. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
+In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectiefbeschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
 
 ## Vaste data over persleidingen
 Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
@@ -61,6 +61,7 @@ Bij het berekenen van de restlevensduur van een leiding is het niet alleen van b
 Een voorbeeld hiervan is opgenomen in Tabel 1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. 
 
 *Tabel 1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
+
 | **Objectnaam** | **Diepteligging (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning ** |
 |----------------|----------------------------------|-------------------------|--------------------------|
 | xx_1           | 11.73 m NAP                      | Revisie                 | 01-01-1971               |
