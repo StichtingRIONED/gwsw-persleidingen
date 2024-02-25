@@ -43,7 +43,7 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 <!---Applicaties (extern en/of op GWSW Server) Gegevensbehoefte-->
 
 # Nieuw in GWSW persleidingen
-In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectiefbeschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
+In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectief beschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
 
 ## Vaste data over persleidingen
 Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
@@ -62,17 +62,40 @@ Een voorbeeld hiervan is opgenomen in Tabel 1, waar meerdere diepteliggingen van
 
 *Tabel 1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
 
-| **Objectnaam** | **Diepteligging (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning ** |
-|----------------|----------------------------------|-------------------------|--------------------------|
-| xx_1           | 11.73 m NAP                      | Revisie                 | 01-01-1971               |
-| xx_1           | 11.68 m NAP                      | GPS Landmeting          | 12-07-1996               |
-| xx_1           | 11.66 m NAP                      | Inspectie               | 06-08-2022               |
+| **Objectnaam** | **Diepteligging (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning** |
+|----------------|----------------------------------|-------------------------|-------------------------|
+| xx_1           | 11.73 m NAP                      | Revisie                 | 01-01-1971              |
+| xx_1           | 11.68 m NAP                      | GPS Landmeting          | 12-07-1996              |
+| xx_1           | 11.66 m NAP                      | Inspectie               | 06-08-2022              |
 
 ## Persleidingincidenten
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
 # Inhoud module
-
+| **Kenmerk**             | **Waardetype**                                                                                             | **Verplicht veld** | **Toelichting**                                                                                                  |
+|-------------------------|------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------|
+| Begindatum              | [yyyymmdd] xsd:date                                                                                        | Nee                | Datum waarop het fysieke object is geplaatst of geinstalleerd                                                    |
+| Breedte leiding         | [mm]                                                                                                       | Nee                | De bij het materiaal gebruikelijke aanduiding van de breedte van een   leiding                                   |
+| Diameter leiding        | [mm]                                                                                                       | Nee                | De lengte van de middellijn van de cirkel die de binnen- of de   buitenzijde van de leidingdoorsnede beschrijft. |
+| Drukklasse              | [bar]                                                                                                      | Nee                | De maximale druk die de buis van een bepaalde klasse kan weerstaan                                               |
+| Einddatum               | [yyyymmdd] xsd:date                                                                                        | Nee                | Datum waarop het fysieke object geen onderdeel meer van het fysieke   systeem is                                 |
+| Hoogte leiding          | [mm]                                                                                                       | Nee                | De bij het materiaal gebruikelijke aanduiding van de hoogte van een   leiding                                    |
+| Leidingorientatie       | [gml] geo:gmlLiteral                                                                                       | Nee                | Geografische beschrijving van leiding in XY coordinaten, met optioneel Z   coordinaten                           |
+| Lengte leiding          | [m] xsd:decimal                                                                                            | Nee                |                                                                                                                  |
+| Materiaal leiding       | Asbestcement,       Beton met stalen kern,       etc.                                                      | Nee                | De bouwstof van de leiding                                                                                       |
+| Revisietekening         | Tekeningnummer                                                                                             | Nee                | Een tekening die na aanleg is opgesteld en in detail de aangelegde   situatie weergeeft                          |
+| Status functioneren     | Buiten gebruik,       In aanleg,       In gebruik,       In ontwerp                                        | Nee                |                                                                                                                  |
+| Toegankelijk            | Alleen toegankelijk voor   apparatuur,       Niet toegankelijk,       Toegankelijk voor mens en apparatuur | Nee                | Aanduiding van de toegankelijkheid op basis van constructieve   eigenschappen                                    |
+| Verbindingstype         | Flensverbinding,       Glijverbinding,       etc.                                                          | Nee                | De wijze waarop de buizen binnen een leiding zijn verbonden                                                      |
+| Verhoogd   risico       |                                                                                                            | Nee                | In kader WION, er geldt een verhoogd risico bij ontgraven voor deze   leiding                                    |
+| Voegmateriaal           | Rubberring,       Voegenkit,       etc.                                                                    | Nee                | Afdichtingsmateriaal van de buisverbindingen                                                                     |
+| Voorzorgsmaatregel      |                                                                                                            | Nee                | In kader WION, document met bijzondere maatregelen bij ontgraven                                                 |
+| Vorm leiding            | Rechthoekig,       Rond,       etc.                                                                        | Nee                | De vorm van de dwarsdoorsnede van de leiding                                                                     |
+| Wanddikte               | [mm] xsd:integer                                                                                           | Nee                | Dikte van de wand van de constructie                                                                             |
+| Wandruwheid             | [mm] xsd:integer                                                                                           | Nee                | K-Nikuradse   waarde profielwand                                                                                 |
+| Wandruwheid binnenboven | [mm] xsd:integer                                                                                           | Nee                |                                                                                                                  |
+| Wandruwheid binnenonder | [mm] xsd:integer                                                                                           | Nee                |                                                                                                                  |
+| Wibon thema             | Laagspanning (thema),       Middenspanning (thema),       Riool onder druk (thema),       etc.             | Nee                |                                                                                                                  |                                                                                             |
 
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
