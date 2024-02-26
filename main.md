@@ -49,18 +49,18 @@ In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beh
 Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
 
 ## Gegevens op verschillende detailniveaus
-Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 1) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 1 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
+Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.1) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 1 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
 
 <img src="media/Buis_SysteemNiveau.png" style="width:80%;height:80%" />
 
-*Figuur 1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
+*Figuur 3.1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
 ## Leiding volgen over de gehele levensduur
 Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te schatten hoe snel degradatieprocessen zoals zetting of aantasting gaan. Deze snelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere metingen van een leidingkenmerk naast elkaar staan, zonder dat de nieuwste meetwaarde de vorige overschrijft. 
 
-Een voorbeeld hiervan is opgenomen in Tabel 1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. 
+Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. 
 
-*Tabel 1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
+*Tabel 3.1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
 
 | **Objectnaam** | **Diepteligging (z-coördinaat)** | **Wijze van inwinning** | **Datum van inwinning** |
 |----------------|----------------------------------|-------------------------|-------------------------|
@@ -72,6 +72,10 @@ Een voorbeeld hiervan is opgenomen in Tabel 1, waar meerdere diepteliggingen van
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
 # Inhoud module
+Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW basis over persleidingen werden vastgelegd. Hierbij was bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, wat betekent dat ook wanneer van een persleiding maar weinig bekend was het toch mogelijk was gegevens via het GWSW uit te wisselen. 
+
+*Tabel 4.1 - Persleidingkenmerken die in GWSW basis woorden vastgelegd*  
+
 | **Kenmerk**             | **Waardetype**                                                                                             | **Verplicht veld** | **Toelichting**                                                                                                  |
 |-------------------------|------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------|
 | Begindatum              | [yyyymmdd] xsd:date                                                                                        | Nee                | Datum waarop het fysieke object is geplaatst of geinstalleerd                                                    |
@@ -97,11 +101,33 @@ De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stich
 | Wandruwheid binnenonder | [mm] xsd:integer                                                                                           | Nee                |                                                                                                                  |
 | Wibon thema             | Laagspanning (thema),       Middenspanning (thema),       Riool onder druk (thema),       etc.             | Nee                |                                                                                                                  |                                                                                             |
 
+
+
+
+|                                                          |            **Concept**                         |                |               |                                                                                                                                                                                                                                                                                                                               |
+| **Behoefte**                                             | **Bestaande situatie** | **Voorstel**          | **Waardetype** | **Verplicht** | **Toelichting**                                                                                                                                                                                                                                                                                                               |
+|----------------------------------------------------------|-----------------------:|----------------------:|----------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Reparatiestukken toevoegen:   lining                     | Deelliner              | Deelliner             | nvt.           | Nee           | Deelliner als concept bestaat   reeds en heeft een oriëntatie, dus kan op kaart worden weergegeven. Concept   was echter alleen beschikbaar voor vrijverval leidingen.                                                                                                                                                        |
+| Reparatiestukken toevoegen:   reparatieklem              | -                      | Reparatieklem         | nvt.           | Nee           | Reparatieklem bestond nog niet   als concept.                                                                                                                                                                                                                                                                                 |
+| Reparatiestukken toevoegen:   reparatiering              | -                      | Reparatiering         | nvt.           | Nee           | Reparatiering bestond nog niet   als concept, Aquaring als synoniem toevoegen.                                                                                                                                                                                                                                                |
+| Persleiding beschrijven op   buisniveau                  | Buisdeel               | Buisdeel              | nvt.           | Nee           | Buisdeel als concept bestaat   reeds, maar was nog niet voorzien van    oriëntatie en kon dus niet op kaart worden weergegeven. Ook miste het   buismateriaal nog.                                                                                                                                                            |
+| Inprikkers op persleidingen   toevoegen                  | -                      | Inprikker             | nvt.           | Nee           | Het is gewenst de locatie van   (industriële) inprikkers in kaart te brengen. Perceelaansluitpunt bestaat al   en zou grotendeels gekopiërd kunnen worden. Dit concept was al voorzien van   een oriëntatie en kon dus op kaart worden weergegeven. Ook de reeds bestaande   kenmerken zoals lozingseisen zijn van toepassing |
+| Verbindingsstukken (Bochtstuk,   T-stuk, etc.) toevoegen | Verbindingsstuk        | Verbindingsstuk       | nvt.           | Nee           | Verbindingsstuk als concept   bestaat reeds en heeft verschillende subtypen zoals bochtstuk en T-stuk. Deze   was nog niet beschikbaar voor persleidingen                                                                                                                                                                     |
+| Missende hulpstukken toevoegen                           | Compensator            | Compensator           | nvt.           | Nee           | Compensator als concept bestaat   reeds, maar was nog geen onderdeel van een persleiding                                                                                                                                                                                                                                      |
+| Missende appendages toevoegen                            | Mechanische afsluiter  | Mechanische afsluiter |                |               | Mechanische afsluiter bestaat   reeds, maar was nog geen onderdeel van een persleiding en had geen oriëntatie                                                                                                                                                                                                                 |
+| Missende   waterslagvoorzieningen toevoegen              | -                      | Be-   en ontluchter   | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
+|                                                          | -                      | Buffertoren           | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
+| Mangat toevoegen                                         | Mangat                 | Mangat                | nvt.           | Nee           | Mangat als concept bestaat reeds   en heeft een oriëntatie, dus kan op kaart worden weergegeven. Concept was   echter alleen beschikbaar voor druk- en vacuümriolen.                                                                                                                                                          |
+
+
+
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
 Fasering in de tijd
 
 # Handleiding, toepassen
+
+## Risicogebied 
 
 Help bij  
 * opbouw datasets
