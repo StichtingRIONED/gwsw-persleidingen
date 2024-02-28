@@ -1,3 +1,7 @@
+<!--- Markdown viewer:https://markdownlivepreview.com/
+Table generator: https://www.tablesgenerator.com/markdown_tables
+  -->
+
 # GWSW Persleidingen
 
 <style>
@@ -153,6 +157,25 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen
 | Gasophoping                                               | -                      | Gasophoping                 | nvt.                | Nee           | Gasophoping bestond nog niet als concept                                                                                                  |
 | Vervuiling                                                | -                      | Vervuiling                  | nvt.                | Nee           | Vervuiling bestond nog niet als concept                                                                                                   |
 | Ovaliteit                                                 | -                      | Ovaliteit                   | [%] xsd:integer     | Nee           | Vervorming van een ronde leiding bestond nog niet als concept                                                                             |
+
+
+## Hydraulica
+De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
+
+| **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
+|-------------------------------------------|------------------------|---------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Toevoegen   verschillende leidingdrukken  | Drukklasse             | Druk:                     |                 | Nee           | Drukklasse als concept bestaat   reeds, maar maakte nog geen onderscheid tussen de drukklasse van een buis, de   ontwerpdruk van de leiding en gemeten drukken |
+|                                           |                        |    Nominale druk (DN)     | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Ontwerpdruk            | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Opleveringsdruktest    | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Testdruk               | [bar] xsd:float | Nee           |                                                                                                                                                                |
+| Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
+
+## Persleidingincidenten
+De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
+<!---https://data.gwsw.nl/1.5.1/Persleidingen -->
+
+<img src="media/PersleidingincidentDiagram.svg" style="width:80%;height:80%" />
 
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
