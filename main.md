@@ -175,6 +175,8 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
 De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
+[STUIP rapport](https://www.riool.net/stuip-standaard-voor-uniforme-incidentenregistratie-persleidingen-2023-18-)
+
 <img src="media/PersleidingincidentDiagram.svg" style="width:120%;height:120%" />
 
 Deelnemers  
