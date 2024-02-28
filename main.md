@@ -175,7 +175,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
 De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
-<img src="media/PersleidingincidentDiagram.svg" style="width:80%;height:80%" />
+<img src="media/PersleidingincidentDiagram.svg" style="width:120%;height:120%" />
 
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
