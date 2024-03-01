@@ -76,9 +76,14 @@ Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen v
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
 # Inhoud module
-Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW basis over persleidingen werden vastgelegd, zie ook [https://data.gwsw.nl/1.6/Basis/Persleiding](https://data.gwsw.nl/1.6/basis/index.html?menu_item=classes&item=../../def/1.6/Basis/Persleiding). Hierbij was bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, wat betekent dat ook wanneer van een persleiding maar weinig gegevens bekend waren het toch mogelijk was deze via het GWSW uit te wisselen. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd.
+Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW basis over persleidingen werden vastgelegd, zie ook [https://data.gwsw.nl/1.6/Basis/Persleiding](https://data.gwsw.nl/1.6/basis/index.html?menu_item=classes&item=../../def/1.6/Basis/Persleiding). Hierbij was bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, wat betekent dat ook wanneer van een persleiding maar weinig gegevens bekend waren het toch mogelijk was deze via het GWSW uit te wisselen. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd. Hierbij zijn de volgende thema's gedefinieerd:
+- Algemeen
+- Risico's
+- Persleidinginspecties
+- Hydraulische aspecten
+- Persleidingincidenten
 
-*Tabel 4.1 - Persleidingkenmerken in GWSW basis*  
+*Tabel 4.1 - Reeds aanwezige persleidingkenmerken in GWSW basis*  
 
 | **Kenmerk**             | **Waardetype**                                                                                             | **Verplicht veld** | **Toelichting**                                                                                                  |
 |-------------------------|------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------|
@@ -106,7 +111,12 @@ Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW bas
 | Wibon thema             | Laagspanning (thema),       Middenspanning (thema),       Riool onder druk (thema),       etc.             | Nee                |                                                                                                                  |                                                                                             |
 
 ## Algemeen
-De algemeen toegevoegde concepten zijn in Tabel 4.2 opgenomen 
+Een overzicht van de nieuw toegevoegde algemene concepten is in Tabel 4.2 opgenomen. Uitgevoerde (lokale) reparaties zoals deelliners, reparatieringen (aquaring) en reparatieklemmen kunnen worden gedefinieerd en zijn voorzien van een orientatie zodat deze op kaart apart kunnen worden weergegeven. Ook kunnen vervangen buisdelen, inclusief datum, materiaal, etc., worden meegenomen. 
+
+Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding zelf niet in de dataset is opgenomen, kan straks het punt van inprikken worden opgenomen. Deze informatie is nodig om afvalwaterhoeveelheden te berekenen en leidingen en leidingen veilig droog te zetten na een calamiteit.
+
+Verschillende appendages en voorzieningen waren nog niet opgenomen in het GWSW of nog niet beschikbaar voor persleidingen.
+
 
 *Tabel 4.2 - Algemeen toegevoegde concepten GWSW persleidingen*  
 
@@ -123,19 +133,19 @@ De algemeen toegevoegde concepten zijn in Tabel 4.2 opgenomen
 | Missende   waterslagvoorzieningen toevoegen              | -                      | Be-   en ontluchter   | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
 |                                                          | -                      | Buffertoren           | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
 | Mangat toevoegen                                         | Mangat                 | Mangat                | nvt.           | Nee           | Mangat als concept bestaat reeds   en heeft een oriëntatie, dus kan op kaart worden weergegeven. Concept was   echter alleen beschikbaar voor druk- en vacuümriolen.                                                                                                                                                          |
-| Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
-## Risico
+## Risico's
 De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen 
 
 *Tabel 4.2 - XXX toegevoegde concepten GWSW persleidingen*  
 
 | **Behoefte**                                                                                     | **Bestaande situatie** | **Voorstel**     | **Waardetype**   | **Verplicht** | **Toelichting**                                                                                         |
 |--------------------------------------------------------------------------------------------------|------------------------|------------------|------------------|---------------|---------------------------------------------------------------------------------------------------------|
-| Toevoegen   debiet persleiding tijdens dwa / hwa. Benodigde gegevens in geval van   calamiteiten | -                      | Afvoerdebiet dwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
+| Toevoegen   debiet persleiding tijdens dwa / hwa. Vaak bepalend voor de gevolgen van een incident en de mate van opschalen | -                      | Afvoerdebiet dwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
 |                                                                                                  | -                      | Afvoerdebiet hwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
 | Toevoegen   of een leiding is voorzien van een beschermende coating                              | Coating                | Coating          | nvt.             | Nee           | Concept Coating bestond al, maar   was nog geen kenmerk van een buisdeel, leidingsegment of persleiding |
 | Toevoegen   geschatte restlevensduur                                                             | Restlevensduur         | Restlevensduur   | [yyyy] xsd:gYear | Nee           | Concept restlevensduur bestond   al, maar was nog geen kenmerk van een buisdeel of leidingsegment en niet   voorzien van wijze en datum van inwinning |
+| Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
 De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen
@@ -159,7 +169,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen
 | Ovaliteit                                                 | -                      | Ovaliteit                   | [%] xsd:integer     | Nee           | Vervorming van een ronde leiding bestond nog niet als concept                                                                             |
 
 
-## Hydraulica
+## Hydraulische aspecten
 De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
 
 | **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
