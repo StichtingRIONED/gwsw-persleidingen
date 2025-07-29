@@ -31,18 +31,27 @@ Het GegevensWoordenboek Stedelijk Water ([GWSW](https://data.gwsw.nl/)) is een o
 
 # Beoogde toepassing
 Voor het beheer van persleidingen worden data steeds relevanter. Het GWSW is gericht op het verbeteren van de datakwaliteit, -uitwisseling en -benutting. Bij de ontwikkeling van GWSW-Persleidingen zijn de volgende toepassingen als uitgangspunt gebruikt:
+
 **Reactief beheer**
 Bij een leidingbreuk is het zaak maatregelen te nemen om de afvoer van afvalwater te herstellen en de gevolgen voor de omgeving te beperken. Hierbij zijn verschillende informatiebronnen ondersteunend. Uit het persleidingenoverzicht volgt welke achterliggende gemalen afgeschakeld moeten worden en welke afsluiters bediend. Nog voor een schep de grond in is gegaan kan op basis van het materiaal en diameter al worden bepaald welk type reparatie van welke grootte nodig is.
+
 **Risicoinventarisatie**
 Een risicoinventarisatie is een veelgebruikt middel voor vervangingsbesluitvorming of het prioriteren van inspecties en leidingconditiemetingen. Om risico's te duiden worden gegevens over de kans op een faalgebeurtenis en de mogelijke gevolgen geïnventariseerd. Voor de kans-kant zijn leidingeigenschappen zoals jaar van aanleg, materiaal en historische faalgebeurtenissen relevant. De bruikbaarheid van geregistreerde historische faalgebeurtenissen hangt nauw samen met het detailniveau waarop deze geregistreerd zijn. Zo is het van belang te differentiëren tussen incidenten met een externe oorzaak, zoals graafschade, die niet veroorzaakt wordt door een verslechterde constructieve toestand en ook bij nieuwe leidingen kan optreden. De gevolg-kant kent twee aspecten, namelijk de kwetsbaarheid van de omgeving (nabijgelegen waterkeringen, andere leidingen, etc.) en het achterliggende gebied dat bij een afvoeronderbreking niet meer kan afvoeren. 
+
 **Voorkomen graafschade**
 Om graafschade te voorkomen wordt informatie over de leidingligging verstrekt aan de partij die voornemens is grondroerwerzkaamheden uit te voeren. In de praktijk blijkt soms dat de kwaliteit van deze liggingsgegevens matig is, waardoor de leidingligging in het veld enkele tot soms tientallen meters afwijkt van de ligging volgens het beheersysteem. Daarnaast is de ligging soms bekend vanuit verschillende gegevensbronnen waarbij alleen de laatste ontsluitbaar is. De kwaliteit en actualiteit van deze gegevens kan worden geduid door deze van een datum en wijze van inwinning (b.v. schatting, ontwerptekening, inmeting, etc.) te voorzien. 
+
 **Toetsen hydraulisch functioneren**
 Software wordt gebruikt om de hydraulische afvoercapaciteit van persleiding modelmatig te toetsen. Naast inzicht in de te verwachten afvoerdebieten kan hiermee ook getoetst worden of luchtophoping te verwachten is en wat de maximale en minimale optredende drukken zijn. Het laatste is ook van belang bij het bepalen van de minimaal benodigde buissterkte. Het GWSW kan de uitwisseling met dergelijke software verbeteren.
+
 **Bepalen actuele leidingconditie en schatten restlevensduur**
 Bij inspecties en leidingconditiemetingen worden data over leidingkenmerken zoals de wanddikte, hoekverdraaiing of ligging gegenereerd. Wanneer uit een toetsing aan de maatstaven volgt dat de leiding niet voldoet, dient deze vervangen te worden. Voor een dergelijke toetsing dienen dus zowel de metingen als de maatstaven vastgelegd te zijn. 
 
-Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten, waarbij metingen worden vergeleken met de aanlegsituatie en de opgetreden degradatie wordt geprojecteerd op de toekomst. Dergelijke restlevensduurschattingen zijn alleen mogelijk wanneer oude gegevens niet overschreven worden maar gezamenlijk worden vastgelegd.
+Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten, waarbij metingen worden vergeleken met de aanlegsituatie en de opgetreden degradatie wordt geprojecteerd op de toekomst (zie ook Figuur 3.1). Dergelijke restlevensduurschattingen zijn alleen mogelijk wanneer oude gegevens niet overschreven worden maar gezamenlijk worden vastgelegd.
+
+<img src="media/Degradatiecurve.drawio.svg" style="width:80%;height:80%" />
+
+*Figuur 3.1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
 <!---Applicaties (extern en/of op GWSW Server) Gegevensbehoefte-->
 
@@ -53,11 +62,11 @@ In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beh
 Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
 
 ## Gegevens op verschillende detailniveaus
-Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.1) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.1 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
+Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.2) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.2 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
 
 <img src="media/Buis_SysteemNiveau.png" style="width:80%;height:80%" />
 
-*Figuur 3.1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
+*Figuur 3.2 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
 ## Leiding volgen over de gehele levensduur
 Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te bepalen hoe snel degradatieprocessen zoals zetting of aantasting in de tijd gaan. De degradatiesnelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere historische metingen van een leidingkenmerk naast elkaar bestaan, waarmee voorkomen wordt dat de nieuwste meetwaarde de vorige overschrijft. 
