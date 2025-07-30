@@ -49,7 +49,7 @@ Bij inspecties en leidingconditiemetingen worden data over leidingkenmerken zoal
 
 Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten, waarbij metingen worden vergeleken met de aanlegsituatie en de opgetreden degradatie wordt geprojecteerd op de toekomst (zie ook Figuur 3.1). Dergelijke restlevensduurschattingen zijn alleen mogelijk wanneer oude gegevens niet overschreven worden maar gezamenlijk worden vastgelegd.
 
-<img src="media/Degradatiecurve.drawio.svg" style="width:80%;height:80%" />
+<img src="media/Degradatiecurve.drawio.svg" style="width:60%;height:60%" />
 
 *Figuur 3.1 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
@@ -59,7 +59,7 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectief beschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
 
 ## Vaste data over persleidingen
-Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn waar nodig bestaande modelconcepten aangepast en missende concepten toegevoegd.
+Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn onvolledige modelconcepten aangepast en missende concepten toegevoegd.
 
 ## Gegevens op verschillende detailniveaus
 Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.2) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.2 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
@@ -85,7 +85,7 @@ Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen v
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
 # Inhoud module
-Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW basis over persleidingen werden vastgelegd, zie ook [https://data.gwsw.nl/1.6/Basis/Persleiding](https://data.gwsw.nl/1.6/basis/index.html?menu_item=classes&item=../../def/1.6/Basis/Persleiding). Hierbij was bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, wat betekent dat ook wanneer van een persleiding maar weinig gegevens bekend waren het toch mogelijk was deze via het GWSW uit te wisselen. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd. Hierbij zijn de volgende thema's gedefinieerd:
+Tabel 4.1 geeft een overzicht van de kenmerken die oorspronkelijk al in GWSW basis over persleidingen werden vastgelegd, zie ook [https://data.gwsw.nl/1.6/Basis/Persleiding](https://data.gwsw.nl/1.6/basis/index.html?menu_item=classes&item=../../def/1.6/Basis/Persleiding). Hierbij was bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, waardoor ook van persleidingen met een incompleet leidingdossier gegevens uitgewisseld kunnen worden via het GWSW. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd. Hierbij zijn de volgende thema's gedefinieerd:
 - Algemene kenmerken
 - Risico's
 - Persleidinginspecties
@@ -142,6 +142,7 @@ Verschillende appendages en voorzieningen waren nog niet opgenomen in het GWSW o
 | Missende   waterslagvoorzieningen toevoegen              | -                      | Be-   en ontluchter   | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
 |                                                          | -                      | Buffertoren           | nvt.           | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
 | Mangat toevoegen                                         | Mangat                 | Mangat                | nvt.           | Nee           | Mangat als concept bestaat reeds   en heeft een oriëntatie, dus kan op kaart worden weergegeven. Concept was   echter alleen beschikbaar voor druk- en vacuümriolen.                                                                                                                                                          |
+| Toevoegen   of een leiding is voorzien van een beschermende coating                              | Coating                | Coating          | nvt.             | Nee           | Concept Coating bestond al, maar   was nog geen kenmerk van een buisdeel, leidingsegment of persleiding |
 
 ## Risico's
 De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen 
@@ -151,35 +152,69 @@ De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen
 | **Behoefte**                                                                                     | **Bestaande situatie** | **Voorstel**     | **Waardetype**   | **Verplicht** | **Toelichting**                                                                                         |
 |--------------------------------------------------------------------------------------------------|------------------------|------------------|------------------|---------------|---------------------------------------------------------------------------------------------------------|
 | Toevoegen   debiet persleiding tijdens dwa / hwa. Vaak bepalend voor de gevolgen van een incident en de mate van opschalen | -                      | Afvoerdebiet dwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
-|                           ^                                                                       | -                      | Afvoerdebiet hwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
-| Toevoegen   of een leiding is voorzien van een beschermende coating                              | Coating                | Coating          | nvt.             | Nee           | Concept Coating bestond al, maar   was nog geen kenmerk van een buisdeel, leidingsegment of persleiding |
+|                                                                                                  | -                      | Afvoerdebiet hwa | [m3/h] xsd:float | Nee           | Kenmerk bestond nog niet                                                                                |
 | Toevoegen   geschatte restlevensduur                                                             | Restlevensduur         | Restlevensduur   | [yyyy] xsd:gYear | Nee           | Concept restlevensduur bestond   al, maar was nog geen kenmerk van een buisdeel of leidingsegment en niet   voorzien van wijze en datum van inwinning |
 | Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
-De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen
+De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILLENDE OBJECTEN RETOUR KRIJGT. 
 
-*Tabel 4.3 - XXX toegevoegde concepten GWSW persleidingen*  
+*Tabel 4.3 - Gegevens Inspectieproject* 
+ 
+| Veldcode                       | Omschrijving                    | Waardetype | Verplicht | Toelichting     |
+| ------------------------------ | ------------------------------- | ---------- | --------- | --------------- |
+| Naam                           | Naam project                    | rdfs:label | Nee       |                 |
+| ProjectreferentieOpdrachtgever | Projectreferentie Opdrachtgever | rdfs:label | Nee       |                 |
+| ProjectreferentieOpdrachtnemer | Projectreferentie Opdrachtnemer | rdfs:label | Nee       |                 |
+| Omschrijving                   | Omschrijving project            | rdfs:label | Nee       | opmerkingenveld |
+| Opdrachtgever                  | Opdrachtgever                   | rdfs:label | Ja        |                 |
+| Opdrachtnemer                  | Opdrachtnemer                   | rdfs:label | Ja        |                 |
+
+*Tabel 4.4 - Inspectiegegevens persleiding of buisdeel*  
 
 | **Behoefte**                                              | **Bestaande situatie** | **Voorstel**                | **Waardetype**      | **Verplicht** | **Toelichting**                                                                                                                           |
-|-----------------------------------------------------------|------------------------|-----------------------------|---------------------|---------------|-------------------------------------------------------------------------------------------------------------------------------------------|
-| Toevoegen wanddikte buis                                  | Wanddikte              | Wanddikte                   |                     | Nee           | Wanddikte als concept bestaat   reeds, maar maakte nog geen onderscheid tussen gemeten en oorspronkelijke   wanddikte bij aanleg.         |
-|                                                           | -                      |    Bij aanleg               | [mm] xsd:decimal    | Nee           | Oorspronkelijke wanddikte bij aanleg                                                                                                      |
-|                                                           | -                      |    Minimaal gemeten         | [mm] xsd:decimal    | Nee           | Minimaal gemeten wanddikte buisdeel                                                                                                       |
-|                                                           | -                      |    Gemiddeld gemeten        | [mm] xsd:decimal    | Nee           | Gemiddeld gemeten wanddikte buisdeel                                                                                                      |
-|                                                           | -                      |    Maximaal gemeten         | [mm] xsd:decimal    | Nee           | Maximaal gemeten wanddikte buisdeel                                                                                                       |
-| Toevoegen   Voegwijdte verbinding                         | -                      | Voegwijdte verbinding       | [mm] xsd:decimal    | Nee           | Voegwijdte verbinding bestond   nog niet als concept                                                                                      |
-| Toevoegen Hoekverdraaiing verbinding                      | -                      | Hoekverdraaiing horizontaal | [grd] xsd:decimal    | Nee           | Hoekverdraaiing als concept   bestaat reeds, maar hierbij werd geen onderscheid gemaakt tussen horizontale   en verticale hoekverdraaiing |
-|                                                           | -                      | Hoekverdraaiing verticaal   | [grd] xsd:decimal    | Nee           | Hoekverdraaiing als concept   bestaat reeds, maar hierbij werd geen onderscheid gemaakt tussen horizontale   en verticale hoekverdraaiing |
-| Toevoegen aantal draadbreuk voorgespannen   betonbuisdeel | -                      | Aantal draadbreuken         | [pcs] xsd:integer | Nee           | draadbreuken in voorgespannen betonbuizen bestaat nog niet als concept                                                                    |
-| Lekkage                                                   | -                      | Lekkage                     | nvt.                | Nee           | Lekkage bestond nog niet als concept                                                                                                      |
-| Gasophoping                                               | -                      | Gasophoping                 | nvt.                | Nee           | Gasophoping bestond nog niet als concept                                                                                                  |
-| Vervuiling                                                | -                      | Vervuiling                  | nvt.                | Nee           | Vervuiling bestond nog niet als concept                                                                                                   |
-| Ovaliteit                                                 | -                      | Ovaliteit                   | [%] xsd:integer     | Nee           | Vervorming van een ronde leiding bestond nog niet als concept                                                                             |
+| Veldcode                         | Omschrijving                       | Waardetype                                            | Verplicht | Toelichting                                                                       |
+| -------------------------------- | ---------------------------------- | ----------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
+| Naam                             | Naam object                        | rdfs:label                                            | Nee       | (b.v. Pers_0001)                                                                  |
+| Type                             | Objecttype                         | rdf:type                                              | Ja        | Mechanische transportleiding, buisdeel, ontluchter, etc.                          |
+| DatumInwinning                   | Datum inwinning                    | xsd:date                                              | Ja        | Datum waarop gegevens verzameld zijn                                              |
+| WijzeVanInwinning                | Wijze van inwinning                | gwsw:hasReference [WijzeVanInwinningColl]             | Nee       | Wijze waarop gegevens verzameld zijn                                              |
+| Opmerking                        | Opmerkingen                        | rdfs:label                                            | Nee       | veld voor opmerkingen                                                             |
+| LocatieWaarneming                | Locatie waarneming                 | gwsw:hasValue [Punt], [Lijn] of en/of [Omtreklocatie] | Ja        | Locatie van een waarneming. Kan een geografische locatie zijn en/of een klokstand |
+| MetingBuigingHorizontaal         | Meting buiging horizontaal         | [m] xsd:decimal                                       | Nee       | Meting van de axiale deformatie in horizontale richting                           |
+| MetingBuigingVerticaal           | Meting buiging verticaal           | [m] xsd:decimal                                       | Nee       | Meting van de axiale deformatie in verticale richting                             |
+| MetingBuigingTotaal              | Meting buiging                     | [m] xsd:decimal                                       | Nee       | Meting van de axiale deformatie                                                   |
+| WaarnemingDelaminatie            | Waarneming delaminatie             |                                                       | Nee       | Waarneming van delaminatie, b.v. bij een GVK buisdeel                             |
+| MetingAantalDraadbreuken         | Meting van het aantal draadbreuken | [pcs] xsd:nonNegativeInteger                          | Nee       | Meting van het aantal gebroken wapeningsdraden in een voorgespannen betonbuis     |
+| Gasophopingtype                  | Type gasophoping                   | gwsw:hasReference [GasOphopingtypeColl]               | Nee       | Waargenomen gasophoping in persleiding                                            |
+| LengteGasophoping                | Lengte gasophoping                 | [m] xsd:decimal                                       | Nee       | Lengte van een waargenomen gasophoping                                            |
+| MetingHoekverdraaiingHorizontaal | Meting hoekverdraaiing horizontaal | [DEG] xsd:decimal                                     | Nee       | De horizontale hoek tussen de verplaatste assen van twee buizen                   |
+| MetingHoekverdraaiingVerticaal   | Meting hoekverdraaiing verticaal   | [DEG] xsd:decimal                                     | Nee       | De verticale hoek tussen de verplaatste assen van twee buizen                     |
+| Lekdebiet                        | Lekdebiet                          | [m3/h] xsd:decimal                                    | Nee       | Gemeten lekdebiet tijdens afpersen of een inspectie                               |
+| Lekkagetype                      | Type lekkage                       | gwsw:hasReference [LekkagetypeColl]                   | Nee       | Lekkageklasse variërend van klein tot groot                                       |
+| BreedteBuisdeelMeting            | Breedte buisdeel meting            | [mm] xsd:integer: min=63 max=4000                     | Nee       | Gemeten breedte van een buisdeel                                                  |
+| HoogteBuisdeelMeting             | Hoogte buisdeel meting             | [mm] xsd:integer: min=63 max=4000                     | Nee       | Gemeten hoogte van een buisdeel                                                   |
+| MetenOvaliteit                   | Meten ovaliteit                    | xsd:decimal: min=0 max=1                              | Nee       | Gemeten ovaliteit (niet rondheid) van een buisdeel                                |
+| WaarnemingVervuiling             | Waarneming vervuiling              |                                                       | Nee       | Waarneming van vervuiling                                                         |
+| VoegwijdteMeting                 | Voegwijdte meting                  | [mm] xsd:decimal                                      | Nee       | Wijdtemeting van de voeg tussen twee buisdelen                                    |
+| WanddikteAfnameGemiddeld         | Gemiddelde afname wanddikte        | [mm] xsd:decimal                                      | Nee       | Gemeten gemiddelde wanddikteafname                                                |
+| WanddikteAfnameMaximaal          | Maximale afname wanddikte          | [mm] xsd:decimal                                      | Nee       | Gemeten maximale wanddikteafname                                                  |
+| WanddikteAfnameGemiddeld         | Minimale afname wanddikte          | [mm] xsd:decimal                                      | Nee       | Gemeten minimale wanddikteafname                                                  |
+| Wanddiktemeting gemiddeld        | Gemiddeld gemeten wanddikte        | [mm] xsd:decimal                                      | Nee       | Gemiddeld gemeten wanddikte                                                       |
+| WanddiktemetingMaximaal          | Maximaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Maximaal gemeten wanddikte                                                        |
+| WanddiktemetingMinimaal          | Minimaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Minimaal gemeten wanddikte                                                        |
+| Afwijking                        | Waargenomen afwijking wanddikte    | rdfs:label                                            | Nee       | Waargenomen wanddikteafwijkingen zoals H2S aantasting of lokale uitloging         |                                                                             |
+[WijzeVanInwinningColl]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./WijzeVanInwinningColl
+[Punt]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Punt
+[Lijn]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Lijn
+[Omtreklocatie]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Omtreklocatie  
+[GasOphopingtypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/GasOphopingtypeColl
+[LekkagetypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/LekkagetypeColl
+
 
 
 ## Hydraulische aspecten
-De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
+De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
 
 | **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
 |-------------------------------------------|------------------------|---------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -191,7 +226,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
 | Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
 
 ## Persleidingincidenten
-De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
+De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
 [STUIP rapport](https://www.riool.net/stuip-standaard-voor-uniforme-incidentenregistratie-persleidingen-2023-18-)
