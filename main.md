@@ -172,7 +172,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILL
 
 *Tabel 4.4 - Inspectiegegevens persleiding of buisdeel*  
 
-| **Behoefte**                                              | **Bestaande situatie** | **Voorstel**                | **Waardetype**      | **Verplicht** | **Toelichting**                                                                                                                           |
+                                                                                                                       |
 | Veldcode                         | Omschrijving                       | Waardetype                                            | Verplicht | Toelichting                                                                       |
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
 | Naam                             | Naam object                        | rdfs:label                                            | Nee       | (b.v. Pers_0001)                                                                  |
