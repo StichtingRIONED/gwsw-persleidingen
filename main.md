@@ -29,7 +29,7 @@ Een groot deel van de persleidingen in Nederland is aangelegd in de jaren 70 en 
 
 Het GegevensWoordenboek Stedelijk Water ([GWSW](https://data.gwsw.nl/)) is een open standaard ontwikkeld en beheerd door de Stichting RIONED, namens de sector. De beoogde meerwaarde van ‘allemaal dezelfde taal spreken’ is verbetering van de kwaliteit van gegevens en de uitwisseling ervan. Gangbare stedelijk  water objecten en structuren zijn reeds beschreven in het deelmodel GWSW basis. Daarnaast zijn verschillende andere deelmodellen ontwikkeld of in ontwikkeling die toegespitst zijn op specifieke toepassingen. Gezien de recente ontwikkelingen op het gebied van persleidingen, sinds ca. 2018 verenigd in de 'Werkgroep Persleidingen' onder leiding van Stichting RIONED en Stowa, heeft Stichting RIONED besloten nu ook een deelmodel Persleidingen te definiëren. 
 
-# Beoogde toepassing
+# Beoogde toepassingen
 Voor het beheer van persleidingen worden data steeds relevanter. Het GWSW is gericht op het verbeteren van de datakwaliteit, -uitwisseling en -benutting. Bij de ontwikkeling van GWSW-Persleidingen zijn de volgende toepassingen als uitgangspunt gebruikt:
 
 **Reactief beheer**
@@ -58,17 +58,17 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 # Nieuw in GWSW persleidingen
 In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectief beschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
 
-## Vaste data over persleidingen
+**Vaste data over persleidingen**
 Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn onvolledige modelconcepten aangepast en missende concepten toegevoegd.
 
-## Gegevens op verschillende detailniveaus
+**Gegevens op verschillende detailniveaus**
 Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.2) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.2 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
 
 <img src="media/Buis_SysteemNiveau.png" style="width:80%;height:80%" />
 
 *Figuur 3.2 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
-## Leiding volgen over de gehele levensduur
+**Leiding volgen over de gehele levensduur**
 Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te bepalen hoe snel degradatieprocessen zoals zetting of aantasting in de tijd gaan. De degradatiesnelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere historische metingen van een leidingkenmerk naast elkaar bestaan, waarmee voorkomen wordt dat de nieuwste meetwaarde de vorige overschrijft. 
 
 Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. Op basis van deze metingen is de gemiddelde zetting 1,4 mm / jaar
@@ -81,7 +81,7 @@ Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen v
 | xx_1           | 11,68 m NAP                      | GPS Landmeting          | 12-07-1996              |
 | xx_1           | 11,66 m NAP                      | Inspectie               | 06-08-2022              |
 
-## Persleidingincidenten
+**Persleidingincidenten**
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
 # Inhoud module
@@ -144,10 +144,26 @@ Verschillende appendages en voorzieningen waren nog niet opgenomen in het GWSW o
 | Mangat toevoegen                                         | Mangat                 | Mangat                | nvt.           | Nee           | Mangat als concept bestaat reeds   en heeft een oriëntatie, dus kan op kaart worden weergegeven. Concept was   echter alleen beschikbaar voor druk- en vacuümriolen.                                                                                                                                                          |
 | Toevoegen   of een leiding is voorzien van een beschermende coating                              | Coating                | Coating          | nvt.             | Nee           | Concept Coating bestond al, maar   was nog geen kenmerk van een buisdeel, leidingsegment of persleiding |
 
-## Risico's
-De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen 
 
-*Tabel 4.2 - XXX toegevoegde concepten GWSW persleidingen*  
+
+## Hydraulische aspecten
+De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen
+
+| **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
+|-------------------------------------------|------------------------|---------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Toevoegen  verschillende leidingdrukken   | -			             | Druk:                     |                 | Nee           | Drukklasse als concept bestaat reeds, maar maakte nog geen onderscheid tussen de drukklasse van een buis, de ontwerpdruk van de leiding en gemeten drukken |
+|                                           |                        |    Drukklasse (PN)	     | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Ontwerpdruk            | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Opleveringsdruktest    | [bar] xsd:float | Nee           |                                                                                                                                                                |
+|                                           |                        |    Testdruk               | [bar] xsd:float | Nee           |                                                                                                                                                                |
+| Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
+
+
+
+## Risico's
+De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen 
+
+*Tabel 4.3 - XXX toegevoegde concepten GWSW persleidingen*  
 
 | **Behoefte**                                                                                     | **Bestaande situatie** | **Voorstel**     | **Waardetype**   | **Verplicht** | **Toelichting**                                                                                         |
 |--------------------------------------------------------------------------------------------------|------------------------|------------------|------------------|---------------|---------------------------------------------------------------------------------------------------------|
@@ -157,9 +173,9 @@ De XXX toegevoegde concepten zijn in Tabel 4.2 opgenomen
 | Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
-De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILLENDE OBJECTEN RETOUR KRIJGT. 
+De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen NOEMEN DAT JE VERSCHILLENDE OBJECTEN RETOUR KRIJGT. 
 
-*Tabel 4.3 - Gegevens Inspectieproject* 
+*Tabel 4.4 - Gegevens Inspectieproject* 
  
 | Veldcode                       | Omschrijving                    | Waardetype | Verplicht | Toelichting     |
 | ------------------------------ | ------------------------------- | ---------- | --------- | --------------- |
@@ -170,9 +186,8 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILL
 | Opdrachtgever                  | Opdrachtgever                   | rdfs:label | Ja        |                 |
 | Opdrachtnemer                  | Opdrachtnemer                   | rdfs:label | Ja        |                 |
 
-*Tabel 4.4 - Inspectiegegevens persleiding of buisdeel*  
+*Tabel 4.5 - Inspectiegegevens persleiding of buisdeel*  
 
-                                                                                                                       |
 | Veldcode                         | Omschrijving                       | Waardetype                                            | Verplicht | Toelichting                                                                       |
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
 | Naam                             | Naam object                        | rdfs:label                                            | Nee       | (b.v. Pers_0001)                                                                  |
@@ -204,6 +219,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILL
 | WanddiktemetingMaximaal          | Maximaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Maximaal gemeten wanddikte                                                        |
 | WanddiktemetingMinimaal          | Minimaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Minimaal gemeten wanddikte                                                        |
 | Afwijking                        | Waargenomen afwijking wanddikte    | rdfs:label                                            | Nee       | Waargenomen wanddikteafwijkingen zoals H2S aantasting of lokale uitloging         |                                                                             |
+
 [WijzeVanInwinningColl]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./WijzeVanInwinningColl
 [Punt]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Punt
 [Lijn]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Lijn
@@ -211,21 +227,7 @@ De XXX toegevoegde concepten zijn in Tabel 4.3 opgenomen NOEMEN DAT JE VERSCHILL
 [GasOphopingtypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/GasOphopingtypeColl
 [LekkagetypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/LekkagetypeColl
 
-
-
-## Hydraulische aspecten
-De XXX toegevoegde concepten zijn in Tabel 4.5 opgenomen
-
-| **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
-|-------------------------------------------|------------------------|---------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Toevoegen  verschillende leidingdrukken   | -			             | Druk:                     |                 | Nee           | Drukklasse als concept bestaat reeds, maar maakte nog geen onderscheid tussen de drukklasse van een buis, de ontwerpdruk van de leiding en gemeten drukken |
-|                                           |                        |    Drukklasse (PN)	     | [bar] xsd:float | Nee           |                                                                                                                                                                |
-|                                           |                        |    Ontwerpdruk            | [bar] xsd:float | Nee           |                                                                                                                                                                |
-|                                           |                        |    Opleveringsdruktest    | [bar] xsd:float | Nee           |                                                                                                                                                                |
-|                                           |                        |    Testdruk               | [bar] xsd:float | Nee           |                                                                                                                                                                |
-| Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
-
-## Persleidingincidenten
+## Persleidingincidenten (NOG IN ONTWIKKELING)
 De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
