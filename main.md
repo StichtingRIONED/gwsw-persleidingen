@@ -181,7 +181,7 @@ Om te bepalen of een leiding risicovol is gebruiken beheerders naast vaste gegev
 In toenemende mate gebruiken beheerders inline-inspecties om inzicht te krijgen in de actuele leidingtoestand. Figuur 4.1 toont voorbeelden van enkele beschikbare inline-inspectietechnieken. Naast informatie over de leidingtoestand komen bij dergelijke inspecties ook veel vaste gegevens beschikbaar op buisniveau. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hieraan kan de opdrachtgever brongegevens over de oorspronkelijke kenmerken aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
 
 
-<img src="media/Inspectietechnieken.svg" style="width:90%;height:90%" />
+<img src="media/Inspectietechnieken.png" style="width:90%;height:90%" />
 
 *Figuur 4.1 - Drie voorbeelden van inline-inspectietechnieken voor persleidingen*  
 
