@@ -56,22 +56,22 @@ Veel beheerders gebruiken conditiemetingen ook om de restlevensduur te schatten,
 <!---Applicaties (extern en/of op GWSW Server) Gegevensbehoefte-->
 
 # Nieuw in GWSW persleidingen
-In dit hoofdstuk zijn de belangrijkste vernieuwingen aan het GWSW vanuit een beheerdersperspectief beschreven. In hoofdstuk 4 is per onderdeel uitgewerkt welke informatie uitgewisseld dient te worden.
+In dit hoofdstuk is vanuit een beheerdersperspectief beschreven wat de de belangrijkste vernieuwingen aan het GWSW zijn. In hoofdstuk 4 is per onderdeel in detail uitgewerkt welke modelconcepten aangepast of toevoegd zijn.
 
 **Vaste data over persleidingen**<br>
-Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydraulische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het GWSW. In deze module zijn onvolledige modelconcepten aangepast en missende concepten toegevoegd.
+Het zwaartepunt van GWSW persleidingen ligt op de de vaste gegevens van persleidingen. Denk hierbij bijvoorbeeld aan leidingmateriaal of wanddikte, maar ook kenmerken die nodig zijn om hydrodynamische berekeningen uit te voeren. Appendages zoals ontluchters en afsluiters vallen ook binnen de scope. De vaste gegevens zijn reeds deels gespecificeerd in het huidige GWSW. In deze module zijn onvolledige modelconcepten aangepast en missende concepten toegevoegd.
 
 **Gegevens op verschillende detailniveaus**<br>
-Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau (zie ook Figuur 3.2) werden vastgelegd, worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.2 omgaan, door steeds de onderlinge relaties te beschrijven: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens uit verschillende bronnen goed te combineren.  
+Waar persleidinggegevens eerder alleen nog op persleidng- of leidingsegmentniveau werden vastgelegd (zie ook Figuur 3.2), worden met de komst van nieuwe inspectietechnieken ook steeds meer gegevens op buisniveau geregistreerd. GWSW persleidingen kan met gegevens op alle detailniveaus in Figuur 3.2 omgaan, door steeds de onderlinge relaties tussen de niveaus te registreren: dus een buisdeel is onderdeel van een leidingsegement, wat weer onderdeel is van een persleiding, etc. Hierdoor zijn gegevens met een verschillend detailniveau toch aan elkaar te relateren. Voorbeeld hiervan is het koppelen van een uitwendige radarmeting van een buisdeel aan beheerdata van de gemeente op persleidingniveau.
 
 <img src="media/Buis_SysteemNiveau.png" style="width:80%;height:80%" />
 
 *Figuur 3.2 - Verschillende niveaus waarop gegevens over persleidingen worden vastgelegd*  
 
 **Leiding volgen over de gehele levensduur**<br>
-Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te bepalen hoe snel degradatieprocessen zoals zetting of aantasting in de tijd gaan. De degradatiesnelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere historische metingen van een leidingkenmerk naast elkaar bestaan, waarmee voorkomen wordt dat de nieuwste meetwaarde de vorige overschrijft. 
+Bij het berekenen van de restlevensduur van een leiding is het niet alleen van belang de huidige conditie te weten, maar ook te bepalen hoe snel degradatieprocessen zoals zetting of aantasting in de tijd gaan. De degradatiesnelheid kan vervolgens geprojecteerd worden om te schatten binnen hoeveel jaar de leiding 'op' is. Binnen GWSW persleidingen kunnen meerdere historische metingen van een leidingkenmerk naast elkaar bestaan, waarmee voorkomen wordt dat de nieuwste meetwaarden de oude overschrijven en gegevens verloren gaan.
 
-Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied beschikbaar zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. Op basis van deze metingen is de gemiddelde zetting 1,4 mm / jaar
+Een voorbeeld hiervan is opgenomen in Tabel 3.1, waarbij meerdere diepteliggingen van een persleiding in zettingsgevoelig gebied bekend zijn. Het gaat hierbij om de oorspronkelijke diepte tijdens aanleg en twee metingen na 25 en 51 jaar. Op basis van deze metingen is af te leiden dat de gemiddelde zettingssnelheid 1,4 mm / jaar is.
 
 *Tabel 3.1 - Voorbeeld van een object waarvan de drie verschillende diepteliggingen zijn vastgelegd*  
 
@@ -84,13 +84,13 @@ Een voorbeeld hiervan is opgenomen in Tabel 3.1, waar meerdere diepteliggingen v
 **Persleidingincidenten**<br>
 De STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) van Stichting RIONED / STOWA is als onderdeel van GWSW persleidingen opgenomen. Deze standaard beschrijft welke aspecten van een persleidingincident vastgelegd moeten worden om tot een bruikbare informatiebron voor risicogestuurd beheer te komen.
 
-# Inhoud module
-Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over persleidingen gaan, zie ook [https://data.gwsw.nl/1.6/Basis/Persleiding](https://data.gwsw.nl/1.6/basis/index.html?menu_item=classes&item=../../def/1.6/Basis/Persleiding). Hierbij is bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, waardoor ook van persleidingen met een incompleet leidingdossier gegevens uitgewisseld kunnen worden via het GWSW. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd. Hierbij zijn de volgende thema's gedefinieerd:
-- Algemene kenmerken  
+# Datamodel
+Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over persleidingen gaan, zie ook [https://data.gwsw.nl/1.5.2/Basis/Persleiding](https://data.gwsw.nl/?menu_item=classes&item=../../def/1.5.2/Basis/Persleiding). Hier is bewust de keuze gemaakt om geen van de kenmerken verplicht te stellen, waardoor ook van persleidingen met een incompleet leidingdossier gegevens geregistreerd uitgewisseld kunnen worden conform het GWSW. In de rest van dit hoofdstuk is per thema uitgewerkt welke concepten in GWSW persleidingen zijn toegevoegd. Hierbij zijn de volgende thema's gedefinieerd:
+- Algemene kenmerken
+- Hydraulische aspecten   
 - Risico's  
 - Persleidinginspecties  
-- Hydraulische aspecten  
-- Persleidingincidenten
+ - Persleidingincidenten
 
 *Tabel 4.1 - Bestaande persleidingconcepten in GWSW basis*  
 
@@ -104,25 +104,34 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 | Hoogte leiding          | [mm] xsd:integer                                                                                                       | Nee                | De bij het materiaal gebruikelijke aanduiding van de hoogte van een   leiding                                    |
 | Leidingorientatie       | [gml] geo:gmlLiteral                                                                                       | Nee                | Geografische beschrijving van leiding in XY coordinaten, met optioneel Z   coordinaten                           |
 | Lengte leiding          | [m] xsd:decimal                                                                                            | Nee                |                                                                                                                  |
-| Materiaal leiding       | Asbestcement,       Beton met stalen kern,       etc.                                                      | Nee                | De bouwstof van de leiding                                                                                       |
+| Materiaal leiding       | gwsw:hasReference [MateriaalLeidingColl] (Asbestcement,       Beton met stalen kern,       etc.)                                                      | Nee                | De bouwstof van de leiding                                                                                       |
 | Revisietekening         | Tekeningnummer                                                                                             | Nee                | Een tekening die na aanleg is opgesteld en in detail de aangelegde   situatie weergeeft                          |
-| Status functioneren     | Buiten gebruik,       In aanleg,       In gebruik,       In ontwerp                                        | Nee                |                                                                                                                  |
-| Toegankelijk            | Alleen toegankelijk voor   apparatuur,       Niet toegankelijk,       Toegankelijk voor mens en apparatuur | Nee                | Aanduiding van de toegankelijkheid op basis van constructieve   eigenschappen                                    |
-| Verbindingstype         | Flensverbinding,       Glijverbinding,       etc.                                                          | Nee                | De wijze waarop de buizen binnen een leiding zijn verbonden                                                      |
-| Verhoogd   risico       |                                                                                                            | Nee                | In kader WION, er geldt een verhoogd risico bij ontgraven voor deze   leiding                                    |
-| Voegmateriaal           | Rubberring,       Voegenkit,       etc.                                                                    | Nee                | Afdichtingsmateriaal van de buisverbindingen                                                                     |
-| Voorzorgsmaatregel      |                                                                                                            | Nee                | In kader WION, document met bijzondere maatregelen bij ontgraven                                                 |
-| Vorm leiding            | Rechthoekig,       Rond,       etc.                                                                        | Nee                | De vorm van de dwarsdoorsnede van de leiding                                                                     |
+| Status functioneren     | gwsw:hasReference [StatusFunctionerenColl] (Buiten gebruik,       In aanleg,       etc.)                                        | Nee                |                                                                                                                  |
+| Toegankelijk            | gwsw:hasReference [ToegankelijkColl] (Alleen toegankelijk voor   apparatuur,       Niet toegankelijk,       etc.) | Nee                | Aanduiding van de toegankelijkheid op basis van constructieve   eigenschappen                                    |
+| Verbindingstype         | gwsw:hasReference [VerbindingstypeColl] (Flensverbinding,       Glijverbinding,       etc.)                                                          | Nee                | De wijze waarop de buizen binnen een leiding zijn verbonden                                                      |
+| Verhoogd   risico       | rdfs:label                                                                                                           | Nee                | In kader WION, er geldt een verhoogd risico bij ontgraven voor deze   leiding                                    |
+| Voegmateriaal           | gwsw:hasReference [VoegmateriaalColl] (Rubberring,       Voegenkit,       etc.)                                                                    | Nee                | Afdichtingsmateriaal van de buisverbindingen                                                                     |
+| Voorzorgsmaatregel      | rdfs:label                                                                                                           | Nee                | In kader WION, document met bijzondere maatregelen bij ontgraven                                                 |
+| Vorm leiding            | gwsw:hasReference [VormLeidingColl] (Rechthoekig,       Rond,       etc.)                                                                        | Nee                | De vorm van de dwarsdoorsnede van de leiding                                                                     |
 | Wanddikte               | [mm] xsd:integer xsd:integer                                                                                           | Nee                | Dikte van de wand van de constructie                                                                             |
 | Wandruwheid             | [mm] xsd:integer xsd:integer                                                                                           | Nee                | K-Nikuradse   waarde profielwand                                                                                 |
 | Wandruwheid binnenboven | [mm] xsd:integer xsd:integer                                                                                           | Nee                |                                                                                                                  |
 | Wandruwheid binnenonder | [mm] xsd:integer xsd:integer                                                                                           | Nee                |                                                                                                                  |
-| Wibon thema             | Laagspanning (thema),       Middenspanning (thema),       Riool onder druk (thema),       etc.             | Nee                |                                                                                                                  |                                                                                             |
+| Wibon thema             | gwsw:hasReference [WIONThemaColl] (Laagspanning (thema), Middenspanning (thema), etc.)             | Nee                |                                                                                                                  |                                                                                             |
+
+[VoegmateriaalColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VoegmateriaalColl
+[MateriaalLeidingColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/MateriaalLeidingColl
+[StatusFunctionerenColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/StatusFunctionerenColl
+[ToegankelijkColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/ToegankelijkColl
+[VerbindingstypeColl]:https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VerbindingstypeColl
+[VormLeidingColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VormLeidingColl
+[WIONThemaColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/WIONThemaColl
+
 
 ## Toegevoegde algemene GWSW-concepten
-Een overzicht van de nieuw toegevoegde algemene concepten is in Tabel 4.2 opgenomen. Uitgevoerde (lokale) reparaties zoals deelliners, reparatieringen (aquaring) en reparatieklemmen, die soms voor vrijverval leidingen al bestonden, kunnen dan voor persleidingen worden gedefinieerd en voorzien van een oriëntatie zodat deze op kaart apart kunnen worden weergegeven. Ook kunnen meer objecten op buisniveau worden gedefinieerd, inclusief datum, materiaal, etc., waarmee aangesloten wordt op het detailniveau van inline-inspecties. Een aantal door de werkgroep genoemde appendages en voorzieningen waren nog niet opgenomen in het GWSW of nog niet beschikbaar voor persleidingen.
+Tabel 4.2 toont een overzicht van de nieuw toegevoegde algemene concepten. Uitgevoerde (lokale) reparaties zoals deelliners, reparatieringen (aquaring) en reparatieklemmen, die deels voor vrijverval leidingen al bestonden, kunnen ook voor persleidingen worden gedefinieerd en voorzien van een oriëntatie zodat deze zichtbaar worden op kaart. Ook kunnen meer details op buisniveau worden gedefinieerd, zoals datum, materiaal, etc., waarmee aangesloten wordt op het niveau waarop inline-inspectietools gegevens verzamelen. Een aantal door de werkgroep genoemde appendages en voorzieningen waren nog niet opgenomen in het GWSW of nog niet specifiek beschikbaar voor persleidingen.
 
-Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding zelf niet in de dataset is opgenomen, kan straks het punt van inprikken worden opgenomen. Deze informatie is nodig om afvalwaterhoeveelheden te berekenen en leidingen en leidingen veilig droog te zetten na een calamiteit.
+Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding zelf niet in de dataset is opgenomen, kan straks het punt van inprikken worden opgenomen. Deze informatie is nodig om afvalwaterhoeveelheden te berekenen en leidingen veilig droog te zetten tijdens een incident.
 
 *Tabel 4.2 - Algemeen toegevoegde concepten GWSW persleidingen*  
 
@@ -133,7 +142,7 @@ Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding 
 | Reparatiestukken toevoegen:   reparatiering              | -                      | Reparatiering         | Nee           | Reparatiering bestond nog niet   als concept, Aquaring als synoniem toevoegen.                                                                                                                                                                                                                                                |
 | Persleiding beschrijven op   buisniveau                  | Buisdeel               | Buisdeel              | Nee           | Buisdeel als concept bestaat   reeds, maar was nog niet voorzien van    oriëntatie en kon dus niet op kaart worden weergegeven. Ook miste het   buismateriaal nog.                                                                                                                                                            |
 | Inprikkers op persleidingen   toevoegen                  | -                      | Inprikker             | Nee           | Het is gewenst de locatie van   (industriële) inprikkers in kaart te brengen. Perceelaansluitpunt bestaat al   en zou grotendeels gekopiërd kunnen worden. Dit concept was al voorzien van   een oriëntatie en kon dus op kaart worden weergegeven. Ook de reeds bestaande   kenmerken zoals lozingseisen zijn van toepassing |
-| Verbindingsstukken (Bochtstuk,   T-stuk, etc.) toevoegen | Verbindingsstuk        | Verbindingsstuk       | Nee           | Verbindingsstuk als concept   bestaat reeds en heeft verschillende subtypen zoals bochtstuk en T-stuk. Deze   was nog niet beschikbaar voor persleidingen                                                                                                                                                                     |
+| Verbindingsstukken (Bochtstuk,   T-stuk, etc.) toevoegen | Verbindingsstuk        | Verbindingsstuk       | Nee           | Verbindingsstuk als concept   bestaat reeds en heeft verschillende subtypen zoals bochtstuk en T-stuk. Deze waren nog niet beschikbaar voor persleidingen                                                                                                                                                                     |
 | Missende hulpstukken toevoegen                           | Compensator            | Compensator           | Nee           | Compensator als concept bestaat   reeds, maar was nog geen onderdeel van een persleiding                                                                                                                                                                                                                                      |
 | Missende appendages toevoegen                            | Mechanische afsluiter  | Mechanische afsluiter |               | Mechanische afsluiter bestaat   reeds, maar was nog geen onderdeel van een persleiding en had geen oriëntatie                                                                                                                                                                                                                 |
 | Missende   waterslagvoorzieningen toevoegen              | -                      | Be-   en ontluchter   | Nee           | Deze waterslagvoorziening was   nog niet opgenomen in het GWSW                                                                                                                                                                                                                                                                |
@@ -142,9 +151,8 @@ Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding 
 | Toevoegen   of een leiding is voorzien van een beschermende coating                              | Coating                | Coating          | Nee           | Concept Coating bestond al, maar   was nog geen kenmerk van een buisdeel, leidingsegment of persleiding |
 
 
-
 ## Hydraulische aspecten
-Voor het uitvoeren van waterslagberekeningen is naast de leidinggeometrie en de aanwezige appendages ook de drukklassse van een persleiding van belang. Voorstel is om ook gemeten drukken zoals de opleveringsdruk en de testdruk toe te voegen. Deze concepten kunnen dienen als maatstaf om naast de uitkomsten van een waterslagberekening te leggen, bijvoorbeeld om te toetsen of de berekende overdruk bij een scenario leidt tot overschrijding van de opleveringstestdruk. Voor waterslagberekeningen is het ook mogelijk energieverliescoefficienten voor lokale verliezen bij appendages toe te voegen. Tabel 4.3 geeft een overzicht van de toegevoegde concepten.
+Voor het uitvoeren van waterslagberekeningen zijn naast de leidinggeometrie en de aanwezige appendages ook gegevens over de drukklasssen van de leidingsegmenten nodig. Voorstel is om ook gemeten drukken zoals de opleveringsdruk en de testdruk toe te voegen. Deze modelconcepten kunnen dienen als maatstaf om naast de uitkomsten van een waterslagberekening te leggen, bijvoorbeeld om te toetsen of de berekende overdruk bij een bepaalt scenario leidt tot overschrijding van de opleveringstestdruk. Voor waterslagberekeningen is het ook mogelijk energieverliescoefficienten voor lokale verliezen bij appendages toe te voegen. Tabel 4.3 geeft een overzicht van de toegevoegde concepten.
 
 *Tabel 4.3 - toegevoegde concepten over hydraulische aspecten*  
 
@@ -158,7 +166,7 @@ Voor het uitvoeren van waterslagberekeningen is naast de leidinggeometrie en de 
 | Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
 
 ## Risico's
-Om te bepalen of een leiding risicovol is gebruiken beheerders naast gegevens zoals de diameter, materiaal en het aanlegjaar, ook de concepten uit Tabel 4.4 Zo bepaalt het afvoerend debiet of tijdens calamiteit afvoer per as kan worden georganiseerd of dat een leiding "too big to fail" is. De restlevensduur en de minimaal benodigde wanddikte kunnen weer worden gebruikt bij het schatten van de kans op falen.
+Om te bepalen of een leiding risicovol is gebruiken beheerders naast vaste gegevens zoals de diameter, materiaal en het aanlegjaar, ook gegevens over de modelconcepten uit Tabel 4.4 Zo bepaalt het afvoerend debiet of tijdens calamiteit afvoer per as kan worden georganiseerd of dat een leiding "too big to fail" is. De restlevensduur en de minimaal benodigde wanddikte worden weer gebruikt om iets te zeggen over de kans op falen.
 
 *Tabel 4.4 - Toegevoegde concepten over risico's*  
 
@@ -170,7 +178,7 @@ Om te bepalen of een leiding risicovol is gebruiken beheerders naast gegevens zo
 | Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
-In toenemende mate gebruiken beheerders inline inspecties om inzicht te krijgen in de actuele leidingtoestand. Naast informatie over de leidingtoestand komen bij dergelijke inspecties ook veel vaste gegevens beschikbaar op buisniveau. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hieraan kan de opdrachtgever brongegevens over de oorspronkelijke kenmerken aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
+In toenemende mate gebruiken beheerders inline-inspecties om inzicht te krijgen in de actuele leidingtoestand. Naast informatie over de leidingtoestand komen bij dergelijke inspecties ook veel vaste gegevens beschikbaar op buisniveau. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hieraan kan de opdrachtgever brongegevens over de oorspronkelijke kenmerken aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
 
 *Tabel 4.5 - Gegevens Inspectieproject* 
  
@@ -219,10 +227,10 @@ Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook va
 | WanddiktemetingMinimaal          | Minimaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Minimaal gemeten wanddikte                                                        |
 | Afwijking                        | Waargenomen afwijking wanddikte    | rdfs:label                                            | Nee       | Waargenomen wanddikteafwijkingen zoals H2S aantasting of lokale uitloging         |                                                                             |
 
-[WijzeVanInwinningColl]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./WijzeVanInwinningColl
-[Punt]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Punt
-[Lijn]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Lijn
-[Omtreklocatie]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Omtreklocatie  
+[WijzeVanInwinningColl]: https://data.gwsw.nl/Persleidingen/index.html?menu_item=classes&item=./WijzeVanInwinningColl
+[Punt]: https://data.gwsw.nl/MateriaalLeidingColl/index.html?menu_item=classes&item=./Punt
+[Lijn]: https://data.gwsw.nl/MateriaalLeidingColl/index.html?menu_item=classes&item=./Lijn
+[Omtreklocatie]: https://data.gwsw.nl/MateriaalLeidingColl/index.html?menu_item=classes&item=./Omtreklocatie  
 [GasOphopingtypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/GasOphopingtypeColl
 [LekkagetypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/LekkagetypeColl
 
