@@ -246,14 +246,19 @@ Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen
 
 
 ## Persleidingincidenten (NOG IN ONTWIKKELING)
-In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante informatie van persleidingincidenten vast te leggen zodat deze bruikbaar worden voor risicogestuurd beheer. Een uitgebreide rapportage is terug te vinden via deze [link]. 
+In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante informatie van persleidingincidenten vast te leggen zodat deze bruikbaar worden voor risicogestuurd beheer. De volledige rapportage is te raadplegen via deze [link]. In Figuur 4.3 staan de verschillende stappen uit het standaardproces van een persleidingincident, van het waarnemen van een incident tot het uiteindelijk verhelpen en evalueren. 
+
+
 
 De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
-[link](https://www.riool.net/stuip-standaard-voor-uniforme-incidentenregistratie-persleidingen-2023-18-)
+[Link]: https://www.stowa.nl/publicaties/registreren-van-persleidingen-voor-risicogestuurd-beheer-stuip-standaard-voor-uniforme
 
-<img src="media/PersleidingincidentDiagram.svg" style="width:120%;height:120%" />
+
+<img src="media/PersleidingincidentDiagram.svg" style="width:110%;height:110%" />
+
+*Figuur 4.3 - Standaardproces van het verhelpen van een persleidingincident, met daarbij per stap de beheerrelevante gegevens. *  
 
 <!---
 Deelnemers  
