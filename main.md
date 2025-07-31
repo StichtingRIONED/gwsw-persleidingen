@@ -178,8 +178,7 @@ Om te bepalen of een leiding risicovol is gebruiken beheerders naast vaste gegev
 | Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
-In toenemende mate gebruiken beheerders inline-inspecties om inzicht te krijgen in de actuele leidingtoestand. Figuur 4.1 toont voorbeelden van enkele beschikbare inline-inspectietechnieken. Naast informatie over de leidingtoestand komen bij dergelijke inspecties ook veel vaste gegevens beschikbaar op buisniveau. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hieraan kan de opdrachtgever brongegevens over de oorspronkelijke kenmerken aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
-
+In toenemende mate gebruiken beheerders inline-inspecties om inzicht te krijgen in de actuele leidingtoestand. Figuur 4.1 geeft enkele voorbeelden van beschikbare inline-inspectietechnieken. Naast informatie over de leidingtoestand worden bij dergelijke inspecties ook veel vaste gegevens op buisniveau verzameld. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hier kan de opdrachtgever brongegevens over het te inspecteren object aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
 
 <img src="media/Inspectietechnieken.png" style="width:90%;height:90%" />
 
@@ -196,7 +195,7 @@ In toenemende mate gebruiken beheerders inline-inspecties om inzicht te krijgen 
 | Opdrachtgever                  | Opdrachtgever                   | rdfs:label | Ja        |                 |
 | Opdrachtnemer                  | Opdrachtnemer                   | rdfs:label | Ja        |                 |
 
-Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook vaste gegevens waarmee een verouderd of incompleet leidingdossier kan worden aangevuld. Tabel 4.6 geeft een overzicht van de concepten die terug kunnen worden geleverd. Het projectresultaat bevat altijd de vaste gegevens het onderzochte object retour, eventueel met geactualiseerde vaste gegevens. Daarnaast kunnnen ook toestandsaspecten worden toegevoegd voor zover beschikbaar. Een toestandsaspect wordt altijd voorzien van een locatieaanduiding, dit kan een klokstand zijn (b.v. 12 uur positie), maar ook een locatiecoordinaat (x, y coördinaten). 
+Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook vaste gegevens waarmee een verouderd of incompleet leidingdossier kan worden aangevuld. Tabel 4.6 geeft een overzicht van de modelconcepten die terug kunnen worden geleverd. Het projectresultaat bevat altijd de vaste gegevens van het geinspecteerde object retour, optioneel voorzien van geactualiseerde kenmerken over de vaste gegevens. Daarnaast kunnnen ook waargenomen toestandsaspecten worden toegevoegd.  Een dergelijk toestandsaspect wordt altijd voorzien van een locatieaanduiding, dit kan een klokstand zijn (b.v. 12 uur positie), maar ook een locatiecoordinaat (x, y coördinaten). 
 
 *Tabel 4.6 - Inspectiegegevens persleiding of buisdeel*  
 
@@ -239,7 +238,7 @@ Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook va
 [GasOphopingtypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/GasOphopingtypeColl
 [LekkagetypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/LekkagetypeColl
 
-Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen. De systematiek is echter voldoende flexibel om gegevens van onderzoeksmethoden variërend van  inline-inspecties van volledige leidingen tot locatiespecifieke boorkernonderzoeken te registeren. Hierbij kunnen meerdere inspecties uitgevoerd door verschillende partijen naast elkaar bestaan zonder dat deze elkaar overschrijven, zodat beheerders kunnen monitoren of bij vervolginspecties de leidingtoestand progressief verslechterd of toch stabiel blijft. Figuur 4.2 (links) geeft een voorbeeld van meerdere typen inline-inspecties uitgevoerd op dezelfde leiding. Waar het oorspronkelijke beheerbestand de leiding beschreef als een aantal leidingsegmenten op basis van de toegepaste materialen en diameters, volgt uit de inspectie een leidingbeschrijving op buisniveau (rechterhelft Figuur 4.2), waar naast vaste gegevens zoals de oorspronkelijke wanddikte, toegepaste materiaal en leidinglengte ook toestandsaspecten zoals de wanddikteafname zijn toegevoegd.
+Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen. De systematiek is echter voldoende flexibel om gegevens van onderzoeksmethoden variërend van  inline-inspecties van volledige leidingen tot locatiespecifieke boorkernonderzoeken te registeren. Hierbij kunnen meerdere inspecties uitgevoerd door verschillende partijen naast elkaar bestaan zonder dat deze elkaar overschrijven, zodat beheerders kunnen monitoren of de leidingtoestand eerder progressief verslechterd of toch stabiel blijft. Figuur 4.2 (links) geeft een voorbeeld van meerdere typen inline-inspecties uitgevoerd op dezelfde leiding. Waar het oorspronkelijke beheerbestand de leiding beschreef als een aantal leidingsegmenten op basis van de toegepaste materialen en diameters, volgt uit de inspectie een leidingbeschrijving op buisniveau (rechterhelft Figuur 4.2), waar naast vaste gegevens zoals de oorspronkelijke wanddikte, toegepaste materiaal en buisdeellengte ook toestandsaspecten zoals de wanddikteafname zijn toegevoegd. Dit geeft eenvoudig inzicht in delen van een persleiding die er slecht aan toe zijn en delen die in goede staat verkeren.
 
 <img src="media/LeidingLigging_Buisniveau.drawio.svg" style="width:90%;height:90%" />
 
@@ -247,13 +246,16 @@ Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen
 
 
 ## Persleidingincidenten (NOG IN ONTWIKKELING)
+In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante informatie van persleidingincidenten vast te leggen zodat deze bruikbaar worden voor risicogestuurd beheer. Een uitgebreide rapportage is terug te vinden via deze [link]. 
+
 De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 <!---https://data.gwsw.nl/1.5.1/Persleidingen -->
 
-[STUIP rapport](https://www.riool.net/stuip-standaard-voor-uniforme-incidentenregistratie-persleidingen-2023-18-)
+[link](https://www.riool.net/stuip-standaard-voor-uniforme-incidentenregistratie-persleidingen-2023-18-)
 
 <img src="media/PersleidingincidentDiagram.svg" style="width:120%;height:120%" />
 
+<!---
 Deelnemers  
 Taakverdeling, rol werkgroep, projectleider, RIONED  
 Fasering in de tijd
@@ -265,3 +267,4 @@ Fasering in de tijd
 Help bij  
 * opbouw datasets
 * gebruik apps
+-->
