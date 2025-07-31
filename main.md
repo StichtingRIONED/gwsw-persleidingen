@@ -93,6 +93,7 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 - Persleidingincidenten
 
 *Tabel 4.1 - Bestaande persleidingconcepten in GWSW basis*  
+
 | **Kenmerk**             | **Waardetype**                                                                                             | **Verplicht veld** | **Toelichting**                                                                                                  |
 |-------------------------|------------------------------------------------------------------------------------------------------------|--------------------|------------------------------------------------------------------------------------------------------------------|
 | Begindatum              | [yyyymmdd] xsd:date                                                                                        | Nee                | Datum waarop het fysieke object is geplaatst of geinstalleerd                                                    |
@@ -119,12 +120,9 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 | Wibon thema             | Laagspanning (thema),       Middenspanning (thema),       Riool onder druk (thema),       etc.             | Nee                |                                                                                                                  |                                                                                             |
 
 ## Toegevoegde algemene GWSW-concepten
-Een overzicht van de nieuw toegevoegde algemene concepten is in Tabel 4.2 opgenomen. Uitgevoerde (lokale) reparaties zoals deelliners, reparatieringen (aquaring) en reparatieklemmen, die soms voor vrijverval leidingen al bestonden, kunnen dan voor persleidingen worden gedefinieerd en voorzien van een oriëntatie zodat deze op kaart apart kunnen worden weergegeven. Ook kunnen meer objecten op buisniveau worden gedefinieerd, inclusief datum, materiaal, etc., waarmee aangesloten wordt op het detailniveau van inline-inspecties. 
+Een overzicht van de nieuw toegevoegde algemene concepten is in Tabel 4.2 opgenomen. Uitgevoerde (lokale) reparaties zoals deelliners, reparatieringen (aquaring) en reparatieklemmen, die soms voor vrijverval leidingen al bestonden, kunnen dan voor persleidingen worden gedefinieerd en voorzien van een oriëntatie zodat deze op kaart apart kunnen worden weergegeven. Ook kunnen meer objecten op buisniveau worden gedefinieerd, inclusief datum, materiaal, etc., waarmee aangesloten wordt op het detailniveau van inline-inspecties. Een aantal door de werkgroep genoemde appendages en voorzieningen waren nog niet opgenomen in het GWSW of nog niet beschikbaar voor persleidingen.
 
 Van inprikkende persleidingen van bedrijven of gemeenten waarvan de persleiding zelf niet in de dataset is opgenomen, kan straks het punt van inprikken worden opgenomen. Deze informatie is nodig om afvalwaterhoeveelheden te berekenen en leidingen en leidingen veilig droog te zetten na een calamiteit.
-
-Verschillende appendages en voorzieningen waren nog niet opgenomen in het GWSW of nog niet beschikbaar voor persleidingen.
-
 
 *Tabel 4.2 - Algemeen toegevoegde concepten GWSW persleidingen*  
 
@@ -146,9 +144,9 @@ Verschillende appendages en voorzieningen waren nog niet opgenomen in het GWSW o
 
 
 ## Hydraulische aspecten
-Voor het uitvoeren van waterslagberekeningen is naast de leidinggeometrie en eventueel aanwezige appendages ook de drukklassse van belang. Voorstel is om ook gemeten drukken zoals de opleveringsdruk en de testdruk toe te voegen. Deze concepten kunnen dienen als maatstaf om naast de uitkomsten van een waterslagberekening te leggen, bijvoorbeeld om te toetsen of de berekende overdruk bij een scenario leidt tot overschrijding van de opleveringstestdruk. Voor waterslagberekeningen is het ook mogelijk energieverliescoefficienten voor lokale verliezen bij appendages toe te voegen. Tabel 4.3 geeft een overzicht van de toegevoegde concepten.
+Voor het uitvoeren van waterslagberekeningen is naast de leidinggeometrie en de aanwezige appendages ook de drukklassse van een persleiding van belang. Voorstel is om ook gemeten drukken zoals de opleveringsdruk en de testdruk toe te voegen. Deze concepten kunnen dienen als maatstaf om naast de uitkomsten van een waterslagberekening te leggen, bijvoorbeeld om te toetsen of de berekende overdruk bij een scenario leidt tot overschrijding van de opleveringstestdruk. Voor waterslagberekeningen is het ook mogelijk energieverliescoefficienten voor lokale verliezen bij appendages toe te voegen. Tabel 4.3 geeft een overzicht van de toegevoegde concepten.
 
-*Tabel 4.3 - XXX toegevoegde concepten over hydraulische aspecten*  
+*Tabel 4.3 - toegevoegde concepten over hydraulische aspecten*  
 
 | **Behoefte**                              | **Bestaande situatie** | **Voorstel**              | **Waardetype**  | **Verplicht** | **Toelichting**                                                                                                                                                |
 |-------------------------------------------|------------------------|---------------------------|-----------------|---------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------|
@@ -160,9 +158,9 @@ Voor het uitvoeren van waterslagberekeningen is naast de leidinggeometrie en eve
 | Lokale verliezen bij appendages toevoegen | -                      | Energieverliescoefficient | [-]             | Nee           | Energieverlies coëfficiënten   voor lokale verliezen bestond nog niet als concept                                                                              |
 
 ## Risico's
-De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen 
+Om te bepalen of een leiding risicovol is gebruiken beheerders naast gegevens zoals de diameter, materiaal en het aanlegjaar, ook de concepten uit Tabel 4.4 Zo bepaalt het afvoerend debiet of tijdens calamiteit afvoer per as kan worden georganiseerd of dat een leiding "too big to fail" is. De restlevensduur en de minimaal benodigde wanddikte kunnen weer worden gebruikt bij het schatten van de kans op falen.
 
-*Tabel 4.4 - XXX toegevoegde concepten GWSW persleidingen*  
+*Tabel 4.4 - Toegevoegde concepten over risico's*  
 
 | **Behoefte**                                                                                     | **Bestaande situatie** | **Voorstel**     | **Waardetype**   | **Verplicht** | **Toelichting**                                                                                         |
 |--------------------------------------------------------------------------------------------------|------------------------|------------------|------------------|---------------|---------------------------------------------------------------------------------------------------------|
@@ -172,9 +170,9 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen
 | Minimaal   benodigde wanddikte als maatstaf toevoegen    | -                      | Minimaal benodigde wanddikte | [mm] xsd:integer    | Nee           | Minimaal benodigde wanddikte   bestond nog niet als concept.                                                                                                                                                                                                                                                                  |
 
 ## Persleidinginspecties
-De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen NOEMEN DAT JE VERSCHILLENDE OBJECTEN RETOUR KRIJGT. 
+In toenemende mate gebruiken beheerders inline inspecties om inzicht te krijgen in de actuele leidingtoestand. Naast informatie over de leidingtoestand komen bij dergelijke inspecties ook veel vaste gegevens beschikbaar op buisniveau. Het uitvoeren van een inspectieproject en het uitwisselen van gegevens wordt gefaciliteerd in GWSW Persleidingen. Een inspectieproject bestaat uit een projectdefinitie met een aantal algemene kenmerken, zie ook Tabel 4.5. Hieraan kan de opdrachtgever brongegevens over de oorspronkelijke kenmerken aan koppelen en uitwisselen met de opdrachtnemer via een uitwisselingsformat in OroX. 
 
-*Tabel 4.4 - Gegevens Inspectieproject* 
+*Tabel 4.5 - Gegevens Inspectieproject* 
  
 | Veldcode                       | Omschrijving                    | Waardetype | Verplicht | Toelichting     |
 | ------------------------------ | ------------------------------- | ---------- | --------- | --------------- |
@@ -185,7 +183,9 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen NOEMEN DAT JE VERSCHILL
 | Opdrachtgever                  | Opdrachtgever                   | rdfs:label | Ja        |                 |
 | Opdrachtnemer                  | Opdrachtnemer                   | rdfs:label | Ja        |                 |
 
-*Tabel 4.5 - Inspectiegegevens persleiding of buisdeel*  
+Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook vaste gegevens waarmee een verouderd of incompleet leidingdossier kan worden aangevuld. Tabel 4.6 geeft een overzicht van de concepten die terug kunnen worden geleverd. Het projectresultaat bevat altijd de vaste gegevens het onderzochte object retour, eventueel met geactualiseerde vaste gegevens. Daarnaast kunnnen ook toestandsaspecten worden toegevoegd voor zover beschikbaar. Een toestandsaspect wordt altijd voorzien van een locatieaanduiding, dit kan een klokstand zijn (b.v. 12 uur positie), maar ook een locatiecoordinaat (x, y coördinaten). 
+
+*Tabel 4.6 - Inspectiegegevens persleiding of buisdeel*  
 
 | Veldcode                         | Omschrijving                       | Waardetype                                            | Verplicht | Toelichting                                                                       |
 | -------------------------------- | ---------------------------------- | ----------------------------------------------------- | --------- | --------------------------------------------------------------------------------- |
@@ -225,6 +225,13 @@ De XXX toegevoegde concepten zijn in Tabel 4.4 opgenomen NOEMEN DAT JE VERSCHILL
 [Omtreklocatie]: https://data.gwsw.nl/Revisies/index.html?menu_item=classes&item=./Omtreklocatie  
 [GasOphopingtypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/GasOphopingtypeColl
 [LekkagetypeColl]: https://data.gwsw.nl/1.6.1/Persleidingen/index.html?menu_item=individuals&item=../../def/1.6.1/Persleidingen/LekkagetypeColl
+
+Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen. De systematiek is echter voldoende flexibel om gegevens van onderzoeksmethoden variërend van  inline-inspecties van volledige leidingen tot locatiespecifieke boorkernonderzoeken te registeren. Hierbij kunnen meerdere inspecties uitgevoerd door verschillende partijen naast elkaar bestaan zonder dat deze elkaar overschrijven, zodat beheerders kunnen monitoren of bij vervolginspecties de leidingtoestand progressief verslechterd of toch stabiel blijft. Figuur 4.1 (links) geeft een voorbeeld van meerdere typen inline-inspecties uitgevoerd op dezelfde leiding. Waar het oorspronkelijke beheerbestand de leiding beschreef als een aantal leidingsegmenten op basis van de toegepaste materialen en diameters, volgt uit de inspectie een leidingbeschrijving op buisniveau (rechterhelft Figuur 4.1), waar naast vaste gegevens zoals de oorspronkelijke wanddikte, toegepaste materiaal en leidinglengte ook toestandsaspecten zoals de wanddikteafname zijn toegevoegd.
+
+<img src="media/LeidingLigging_Buisniveau.drawio.svg" style="width:90%;height:90%" />
+
+*Figuur 4.1 - Leidingligging volgens drie verschillende inspecties uitgevoerd in zomer 2024, tezamen met twee historische persleidingincidenten (Links). Voorbeeld van inspectiegegevens op buisniveau (Rechts)*  
+
 
 ## Persleidingincidenten (NOG IN ONTWIKKELING)
 De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
