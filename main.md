@@ -245,7 +245,7 @@ Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen
 *Figuur 4.2 - Leidingligging volgens drie verschillende inspecties uitgevoerd in zomer 2024, tezamen met twee historische persleidingincidenten (Links). Voorbeeld van inspectiegegevens op buisniveau (Rechts)*  
 
 
-## Persleidingincidenten (NOG IN ONTWIKKELING)
+## Persleidingincidenten
 In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante gegevens van persleidingincidenten vast te leggen zodat deze bruikbaar worden als informatiebron voor risicogestuurd beheer. De volledige rapportage is te raadplegen via deze [link]. In Figuur 4.3 staan de verschillende stappen uit het standaardproces van een persleidingincident, van het waarnemen van een incident tot het uiteindelijk verhelpen en evalueren. 
 
 [Link]: https://www.stowa.nl/publicaties/registreren-van-persleidingen-voor-risicogestuurd-beheer-stuip-standaard-voor-uniforme
@@ -281,6 +281,13 @@ Bij het doorlopen van het standaardproces komen drie typen gegevens vrij, nameli
 [OorzaakPLIHydraulischColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OorzaakPLIHydraulischColl
 [OndernomenActieColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OndernomenActieColl
 [VeroorzaaktDoorColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/VeroorzaaktDoorColl
+
+Figuur 4.4 toont een dataset waarvan de incidenten conform GWSW-Persleidingen is vastgelegd. Hiermee zijn verdiepende analyses in GIS pakketten eenvoudig uit te voeren. Zo zijn in deze figuur 2 incidenten het gevolg van aanlegfouten. Dat onderscheid kan van belang zijn omdat oorzaken zoals graafschade of aanlegfouten geen tekenen zijn van veroudering, maar verwerking van PVC bijvoorbeeld wel. Dit laatste kan betekenen dat de persleiding (deels) tegen het einde van zijn levensduur loopt.
+
+<img src="media/VoorbeeldIncidentOorzaak.png" style="width:100%;height:100%" />
+
+*Figuur 4.4 - Persleidingenincidenten naar oorzaakcategorie. *  
+
 
 Gegevens over de gevolgen van een persleidingincident zijn bruikbaar voor risicomanagement, doordat deze de beheerder in staat stellen de effecten van een gebeurtenis te vertalen naar de bedrijfswaarden. Tabel 4.8 geeft een overzicht van alle modelconcepten die vastgelegd kunnen worden om de gevolgen inzichtelijk te maken.
 
