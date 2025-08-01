@@ -284,7 +284,7 @@ Bij het doorlopen van het standaardproces komen drie typen gegevens vrij, nameli
 
 Figuur 4.4 toont een dataset waarvan de incidenten conform GWSW-Persleidingen is vastgelegd. Hiermee zijn verdiepende analyses in GIS pakketten eenvoudig uit te voeren. Zo zijn in deze figuur 2 incidenten het gevolg van aanlegfouten. Dat onderscheid kan van belang zijn omdat oorzaken zoals graafschade of aanlegfouten geen tekenen zijn van veroudering, maar verwerking van PVC bijvoorbeeld wel. Dit laatste kan betekenen dat de persleiding (deels) tegen het einde van zijn levensduur loopt.
 
-<img src="media/VoorbeeldIncidentOorzaak.png" style="width:100%;height:100%" />
+<img src="media/VoorbeeldIncidentOorzaak.png" style="width:65%;height:65%" />
 
 *Figuur 4.4 - Persleidingenincidenten naar oorzaakcategorie. *  
 
