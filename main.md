@@ -109,9 +109,9 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 | Status functioneren     | gwsw:hasReference [StatusFunctionerenColl] (Buiten gebruik,       In aanleg,       etc.)                                        | Nee                |                                                                                                                  |
 | Toegankelijk            | gwsw:hasReference [ToegankelijkColl] (Alleen toegankelijk voor   apparatuur,       Niet toegankelijk,       etc.) | Nee                | Aanduiding van de toegankelijkheid op basis van constructieve   eigenschappen                                    |
 | Verbindingstype         | gwsw:hasReference [VerbindingstypeColl] (Flensverbinding,       Glijverbinding,       etc.)                                                          | Nee                | De wijze waarop de buizen binnen een leiding zijn verbonden                                                      |
-| Verhoogd   risico       | rdfs:label                                                                                                           | Nee                | In kader WION, er geldt een verhoogd risico bij ontgraven voor deze   leiding                                    |
+| Verhoogd   risico       | gwsw:hasValue                                                                                                           | Nee                | In kader WION, er geldt een verhoogd risico bij ontgraven voor deze   leiding                                    |
 | Voegmateriaal           | gwsw:hasReference [VoegmateriaalColl] (Rubberring,       Voegenkit,       etc.)                                                                    | Nee                | Afdichtingsmateriaal van de buisverbindingen                                                                     |
-| Voorzorgsmaatregel      | rdfs:label                                                                                                           | Nee                | In kader WION, document met bijzondere maatregelen bij ontgraven                                                 |
+| Voorzorgsmaatregel      | gwsw:hasValue                                                                                                           | Nee                | In kader WION, document met bijzondere maatregelen bij ontgraven                                                 |
 | Vorm leiding            | gwsw:hasReference [VormLeidingColl] (Rechthoekig,       Rond,       etc.)                                                                        | Nee                | De vorm van de dwarsdoorsnede van de leiding                                                                     |
 | Wanddikte               | [mm] xsd:integer xsd:integer                                                                                           | Nee                | Dikte van de wand van de constructie                                                                             |
 | Wandruwheid             | [mm] xsd:integer xsd:integer                                                                                           | Nee                | K-Nikuradse   waarde profielwand                                                                                 |
@@ -205,7 +205,7 @@ Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook va
 | Type                             | Objecttype                         | rdf:type                                              | Ja        | Mechanische transportleiding, buisdeel, ontluchter, etc.                          |
 | DatumInwinning                   | Datum inwinning                    | xsd:date                                              | Ja        | Datum waarop gegevens verzameld zijn                                              |
 | WijzeVanInwinning                | Wijze van inwinning                | gwsw:hasReference [WijzeVanInwinningColl]             | Nee       | Wijze waarop gegevens verzameld zijn                                              |
-| Opmerking                        | Opmerkingen                        | rdfs:label                                            | Nee       | veld voor opmerkingen                                                             |
+| Opmerking                        | Opmerkingen                        | gwsw:hasValue                                            | Nee       | veld voor opmerkingen                                                             |
 | LocatieWaarneming                | Locatie waarneming                 | gwsw:hasValue [Punt], [Lijn] of en/of [Omtreklocatie] | Ja        | Locatie van een waarneming. Kan een geografische locatie zijn en/of een klokstand |
 | MetingBuigingHorizontaal         | Meting buiging horizontaal         | [m] xsd:decimal                                       | Nee       | Meting van de axiale deformatie in horizontale richting                           |
 | MetingBuigingVerticaal           | Meting buiging verticaal           | [m] xsd:decimal                                       | Nee       | Meting van de axiale deformatie in verticale richting                             |
@@ -229,7 +229,7 @@ Het resultaat van een project zijn gemeten toestandssaspecten en mogelijk ook va
 | Wanddiktemeting gemiddeld        | Gemiddeld gemeten wanddikte        | [mm] xsd:decimal                                      | Nee       | Gemiddeld gemeten wanddikte                                                       |
 | WanddiktemetingMaximaal          | Maximaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Maximaal gemeten wanddikte                                                        |
 | WanddiktemetingMinimaal          | Minimaal gemeten wanddikte         | [mm] xsd:decimal                                      | Nee       | Minimaal gemeten wanddikte                                                        |
-| Afwijking                        | Waargenomen afwijking wanddikte    | rdfs:label                                            | Nee       | Waargenomen wanddikteafwijkingen zoals H2S aantasting of lokale uitloging         |                                                                             |
+| Afwijking                        | Waargenomen afwijking wanddikte    | gwsw:hasValue                                            | Nee       | Waargenomen wanddikteafwijkingen zoals H2S aantasting of lokale uitloging         |                                                                             |
 
 [WijzeVanInwinningColl]: https://data.gwsw.nl/Persleidingen/index.html?menu_item=classes&item=./WijzeVanInwinningColl
 [Punt]: https://data.gwsw.nl/MateriaalLeidingColl/index.html?menu_item=classes&item=./Punt
@@ -259,6 +259,57 @@ De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 <img src="media/PersleidingincidentDiagram.svg" style="width:110%;height:110%" />
 
 *Figuur 4.3 - Standaardproces van het verhelpen van een persleidingincident, met daarbij per stap de beheerrelevante gegevens. *  
+
+*Tabel 4.7 - Gegevens persleidingincident*  
+
+| Veldcode                            | Omschrijving                             | Waardetype                                     | Verplicht | Toelichting                                                                   |
+| ----------------------------------- | ---------------------------------------- | ---------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
+| Incidentnummer                      | Naam object                              | gwsw:hasValue                                  | Ja        | Intern incidentnummer                                                         |
+| DatumIncident                       | Datum incident                           | xsd:date                                       | Ja        | Datum waarop het incident bekend was                                          |
+| Punt                                | Puntlocatie                              | geo:gmlLiteral                                 | Nee       | Geografische locatie van het incident                                         |
+| Incidentobject                      | Incidentobject                           | rdfs:label                                     | Ja        | Relatie met het incidentobject, b.v. een persleiding                          |
+| ConstructieveIntegriteitOnvoldoende | Constructieve integriteit onvoldoende    | rdfs:label                                     | Ja        | Specificeren of sprake was van een constructief defect                        |
+| WaargenomenDefect                   | Waargenomen Defect                       | gwsw:hasReference [DefectAanBuisdeelColl]      | Ja        | Waargenomen type constructief defect (b.v. scheur in langsrichting)           |
+| HydraulischeCapaciteitOnvoldoende   | Hydraulische capaciteit onvoldoende      | rdfs:label                                     | Ja        | Specificeren of sprake was van een hydraulisch defect                         |
+| OorzaakPLIConstructief              | Oorzaak persleidingincident constructief | gwsw:hasReference [OorzaakPLIConstructiefColl] | Nee       | Mogelijk oorzaken bij een constructief defect                                 |
+| OorzaakPLIHydraulisch               | Oorzaak persleidingincident hydraulisch  | gwsw:hasReference [OorzaakPLIHydraulischColl]  | Nee       | Mogelijk oorzaken bij een hydraulisch defect                                  |
+| BeschrijvingWaarneming              | Beschrijving waarneming                  | gwsw:hasValue                                  | Nee       | Beschrijving van het incident in vrije tekst                                  |
+| OndernomenActie                     | Ondernomen actie                         | gwsw:hasReference [OndernomenActieColl]        | Nee       | Ondernomen actie nadat een incident geconstateerd is                          |
+| VeroorzaaktDoor                     | Veroorzaakt door                         | gwsw:hasReference [VeroorzaaktDoorColl]        | Nee       | Toekenbare veroorzaker van incident. Bij spontaant incident de objecteigenaar |
+
+
+[DefectAanBuisdeelColl]: https://data.gwsw.nl/persleidingen/?menu_item=classes&item=../../def/1.6.1/Persleidingen/DefectAanBuisdeelColl
+[OorzaakPLIConstructiefColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OorzaakPLIConstructiefColl
+[OorzaakPLIHydraulischColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OorzaakPLIHydraulischColl
+[OndernomenActieColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OndernomenActieColl
+[VeroorzaaktDoorColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/VeroorzaaktDoorColl
+
+*Tabel 4.8 - Evaluatie persleidingincident*  
+
+| Veldcode                             | Omschrijving                           | Waardetype    | Verplicht | Toelichting                                                                        |
+| ------------------------------------ | -------------------------------------- | ------------- | --------- | ---------------------------------------------------------------------------------- |
+| AantalDoden                          | Aantal doden                           | pcs           | Nee       | Aantal dodelijke slachtoffers als gevolg van het incident                          |
+| ToelichtingAantalDoden               | Toelichting aantal doden               | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk aantal doden                           |
+| AantalGewonden                       | Aantal gewonden                        | pcs           | Nee       | Aantal gewonden als gevolg van het incident                                        |
+| ToelichtingAantalGewonden            | Toelichting aantal gewonden            | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk aantal gewonden                        |
+| EffectWaterkwaliteit                 | Effect waterkwaliteit                  | xsd:boolean   | Nee       | Aanduiding of sprake was effecten op relevante waterkwaliteitsindicatoren          |
+| ToelichtingEffectWaterkwaliteit      | Toelichting effect waterkwaliteit      | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk effect waterkwaliteit                  |
+| Gezondheidsrisico                    | Gezondheidsrisico                      | xsd:boolean   | Nee       | Aanduiding of sprake was effecten op de gezondheidvan mens of dier                 |
+| ToelichtingGezondheidsrisico         | Toelichting gezondheidsrisico          | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk gezondheidsrisico                      |
+| BedreigingKering                     | Bedreiging kering                      | xsd:boolean   | Nee       | Aanduiding of sprake was van negatieve gevolgen voor de stabiliteit van een kering |
+| ToelichtingBedreigingKering          | Toelichting bedreiging kering          | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk bedreiging kering                      |
+| VerminderdeBereikbaarheid            | Verminderde bereikbaarheid             | xsd:boolean   | Nee       | heeft het incident geleid tot een verminderde bereikbaarheid                       |
+| ToelichtingVerminderdeBereikbaarheid | Toelichting verminderde bereikbaarheid | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk verminderde bereikbaarheid             |
+| PubliciteitMedia                     | Publiciteit media                      | xsd:boolean   | Nee       | Aanduiding of sprake was van negatieve publiciteit in media                        |
+| ToelichtingPubliciteitMedia          | Toelichting publiciteit media          | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk publiciteit media                      |
+| AantalMeldingen                      | Aantal meldingen                       | pcs           | Nee       | Aantal meldingen als gevolg van een persleidingincident                            |
+| ToelichtingMeldingen                 | Toelichting meldingen                  | gwsw:hasValue | Nee       | Tekstuele toelichting behorende bij kenmerk aantal meldingen                       |
+| Pandschade                           | Pandschade                             | xsd:decimal   | Nee       | Schade aan pand, uitgedrukt in Euro                                                |
+| Indoedelschade                       | Indoedelschade                         | xsd:decimal   | Nee       | Schade aan inboedel, uitgedruk in Euro                                             |
+| Voertuigschade                       | Voertuigschade                         | xsd:decimal   | Nee       | Schade aan voertuig(en), uitgedruk in Euro                                         |
+| Herstelkosten                        | Herstelkosten                          | xsd:decimal   | Nee       | Herstelkosten persleiding en openbare ruimte, uitgedrukt in Euro                   |
+| DuurAfvoeronderbreking               | Duur afvoeronderbreking                | xsd:decimal   | Nee       | Duur van de afvoeronderbreking, uitgedrukt in aantal uren                          |
+| Commentaar                           | Commentaar                             | gwsw:hasValue | Nee       | Tekstuele toelichting op gevolgen persleidingincident                              |
 
 <!---
 Deelnemers  
