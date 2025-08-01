@@ -246,30 +246,26 @@ Bij het opstellen van Tabel 4.6 is een inline-inspectie als uitgangspunt genomen
 
 
 ## Persleidingincidenten (NOG IN ONTWIKKELING)
-In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante informatie van persleidingincidenten vast te leggen zodat deze bruikbaar worden voor risicogestuurd beheer. De volledige rapportage is te raadplegen via deze [link]. In Figuur 4.3 staan de verschillende stappen uit het standaardproces van een persleidingincident, van het waarnemen van een incident tot het uiteindelijk verhelpen en evalueren. 
-
-
-
-De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
-<!---https://data.gwsw.nl/1.5.1/Persleidingen -->
+In opdracht van Stichting RIONED / STOWA is in 2023 een STandaard voor Uniforme Incidentenregistratie Persleidingen (STUIP) opgesteld, met als doel beheerrelevante gegevens van persleidingincidenten vast te leggen zodat deze bruikbaar worden als informatiebron voor risicogestuurd beheer. De volledige rapportage is te raadplegen via deze [link]. In Figuur 4.3 staan de verschillende stappen uit het standaardproces van een persleidingincident, van het waarnemen van een incident tot het uiteindelijk verhelpen en evalueren. 
 
 [Link]: https://www.stowa.nl/publicaties/registreren-van-persleidingen-voor-risicogestuurd-beheer-stuip-standaard-voor-uniforme
-
 
 <img src="media/PersleidingincidentDiagram.svg" style="width:110%;height:110%" />
 
 *Figuur 4.3 - Standaardproces van het verhelpen van een persleidingincident, met daarbij per stap de beheerrelevante gegevens. *  
 
-*Tabel 4.7 - Gegevens persleidingincident*  
+Bij het doorlopen van het standaardproces komen drie typen gegevens vrij, namelijk: algemene gegevens, inhoudelijke gegevens en gegevens over de gevolgen van een persleidingincident. Tabel 4.7 toont de modelconcepten over algemene en inhoudelijke gegevens. Algemene gegevens beschrijven de locatie en tijdstip van een persleidingincident. Inhoudelijke gegevens stellen beheerders in staat om te leren van incidenten en gaan over het type defect, de bijbehorende oorzaak en ondernomen actie.
+
+*Tabel 4.7 - Modelconcepten over algemene en inhoudelijke gegevens persleidingincidenten*  
 
 | Veldcode                            | Omschrijving                             | Waardetype                                     | Verplicht | Toelichting                                                                   |
 | ----------------------------------- | ---------------------------------------- | ---------------------------------------------- | --------- | ----------------------------------------------------------------------------- |
 | Incidentnummer                      | Naam object                              | gwsw:hasValue                                  | Ja        | Intern incidentnummer                                                         |
-| DatumIncident                       | Datum incident                           | xsd:date                                       | Ja        | Datum waarop het incident bekend was                                          |
+| DatumIncident                       | Datum incident                           | xsd:date                                       | Ja        | Datum waarop het incident opgetreden is                                          |
 | Punt                                | Puntlocatie                              | geo:gmlLiteral                                 | Nee       | Geografische locatie van het incident                                         |
 | Incidentobject                      | Incidentobject                           | rdfs:label                                     | Ja        | Relatie met het incidentobject, b.v. een persleiding                          |
 | ConstructieveIntegriteitOnvoldoende | Constructieve integriteit onvoldoende    | rdfs:label                                     | Ja        | Specificeren of sprake was van een constructief defect                        |
-| WaargenomenDefect                   | Waargenomen Defect                       | gwsw:hasReference [DefectAanBuisdeelColl]      | Ja        | Waargenomen type constructief defect (b.v. scheur in langsrichting)           |
+| WaargenomenDefect                   | Waargenomen Defect                       | gwsw:hasReference [DefectAanBuisdeelColl], [DefectAanHulpstuk_AppendageColl] of [DefectAanVerbindingColl]      | Ja        | Waargenomen type constructief defect (b.v. scheur in langsrichting)           |
 | HydraulischeCapaciteitOnvoldoende   | Hydraulische capaciteit onvoldoende      | rdfs:label                                     | Ja        | Specificeren of sprake was van een hydraulisch defect                         |
 | OorzaakPLIConstructief              | Oorzaak persleidingincident constructief | gwsw:hasReference [OorzaakPLIConstructiefColl] | Nee       | Mogelijk oorzaken bij een constructief defect                                 |
 | OorzaakPLIHydraulisch               | Oorzaak persleidingincident hydraulisch  | gwsw:hasReference [OorzaakPLIHydraulischColl]  | Nee       | Mogelijk oorzaken bij een hydraulisch defect                                  |
@@ -279,12 +275,16 @@ De XXX toegevoegde concepten zijn in Tabel 4.6 opgenomen
 
 
 [DefectAanBuisdeelColl]: https://data.gwsw.nl/persleidingen/?menu_item=classes&item=../../def/1.6.1/Persleidingen/DefectAanBuisdeelColl
+[DefectAanHulpstuk_AppendageColl]: https://data.gwsw.nl/persleidingen/?menu_item=classes&item=../../def/1.6.1/Persleidingen/DefectAanHulpstuk_AppendageColl
+[DefectAanVerbindingColl]: https://data.gwsw.nl/persleidingen/?menu_item=classes&item=../../def/1.6.1/Persleidingen/DefectAanVerbindingColl
 [OorzaakPLIConstructiefColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OorzaakPLIConstructiefColl
 [OorzaakPLIHydraulischColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OorzaakPLIHydraulischColl
 [OndernomenActieColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/OndernomenActieColl
 [VeroorzaaktDoorColl]: https://data.gwsw.nl/persleidingen/?menu_item=individuals&item=../../def/1.6.1/Persleidingen/VeroorzaaktDoorColl
 
-*Tabel 4.8 - Evaluatie persleidingincident*  
+Gegevens over de gevolgen van een persleidingincident zijn bruikbaar voor risicomanagement, doordat deze de beheerder in staat stellen de effecten van een gebeurtenis te vertalen naar de bedrijfswaarden. Tabel 4.8 geeft een overzicht van alle modelconcepten die vastgelegd kunnen worden om de gevolgen inzichtelijk te maken.
+
+*Tabel 4.8 - Modelconcepten voor het vastleggen van de gevolgen van een persleidingincident*  
 
 | Veldcode                             | Omschrijving                           | Waardetype    | Verplicht | Toelichting                                                                        |
 | ------------------------------------ | -------------------------------------- | ------------- | --------- | ---------------------------------------------------------------------------------- |
