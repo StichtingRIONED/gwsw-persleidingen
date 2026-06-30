@@ -117,7 +117,7 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 | Wandruwheid       | [mm] xsd:integer xsd:integer                                              | Nee        | K-Nikuradse  waarde profielwand                                         |
 | Wandruwheid binnenboven | [mm] xsd:integer xsd:integer                                              | Nee        |                                                         |
 | Wandruwheid binnenonder | [mm] xsd:integer xsd:integer                                              | Nee        |                                                         |
-| Wibon thema       | gwsw:hasReference [WIONThemaColl] (Laagspanning (thema), Middenspanning (thema), etc.)       | Nee        |                                                         |                                               |
+| Wibon thema       | gwsw:hasReference [WIBONThemaColl] (Laagspanning (thema), Middenspanning (thema), etc.)       | Nee        |                                                         |                                               |
 
 [VoegmateriaalColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VoegmateriaalColl
 [MateriaalLeidingColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/MateriaalLeidingColl
@@ -125,7 +125,7 @@ Tabel 4.1 geeft een overzicht van de bestaande concepten in GWSW basis die over 
 [ToegankelijkColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/ToegankelijkColl
 [VerbindingstypeColl]:https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VerbindingstypeColl
 [VormLeidingColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/VormLeidingColl
-[WIONThemaColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/WIONThemaColl
+[WIBONThemaColl]: https://data.gwsw.nl/totaal/?menu_item=individuals&item=../../def/1.6.1/Totaal/WIONThemaColl
 
 
 ## Toegevoegde algemene GWSW-concepten
